@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <table>
+                <caption><span style="color: cadetblue"><h2>예약자 정보를 입력해주세요</h2></span></caption>
+                <br>
+                <tr>
+                    <th><label for="name">예약자 성명 </label></th>
+                    <td><input required stype="text" id="name" placeholder="이름"><td></td>
+                </tr>
+                <tr>
+                    <th><label for="birth">생년월일</label></th>
+                    <td><input required type="number" id="birth" placeholder="8자리 숫자만 입력해주세요"></td>
+                </tr>
+                <tr>
+                    <th><label for="phone">예약자 연락처</label> </th>
+                    <td><input required type="text" id="phone" placeholder="예시)010-1111-1111"></td>
+                </tr>
+                <tr>
+                    <th><label>내원 기록</label></th>
+                    <td>
+                        <label for="first" >초진</label>
+                        <input checked type="radio" id="first" name="log">
+                        <label for="again">재진</label>
+                        <input type="radio" id="again" name="log">
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label for="textbox">예약내용</label></th>
+                    <td><textarea id="textbox" cols="80" rows="10" placeholder="아프신 부위 및 증상을 남겨주세요. 예약내용을 남겨주시면 연락처로 상담전화를 드립니다."></textarea></td>
+                </tr>
+                <br><br><br>
+                <tr>
+                    <td> <input required type="checkbox" id="agree">
+                        <label for="agree"><b>개인정보수집동의</b></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="온라인예약 신청하기"> 
+                        <input type="reset" name="" id="" value="취소">
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+    
+</body>
+</html>
