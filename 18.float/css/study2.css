@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+
+
+.box{
+    border: 1px solid crimson;
+    width: 800px;
+    margin: 0 auto;
+}
+.box>img{
+    float: left;
+    width: 50%;
+    border: 5px solid blue;
+    margin: 20px;
+}
+.box::after{
+    display: block;
+    content: "";
+    clear: both;
+}

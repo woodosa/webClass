@@ -1,0 +1,205 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: inherit;}
+ol,ul{list-style: none;}
+
+/* 설정 */
+html{font-size: 12px; font-family: 'Noto Sans KR', sans-serif;
+background: url(./img/bg_body.jpg) no-repeat ; background-size: cover;
+}
+
+.container{width: 1000px; margin: 0 auto;}
+
+
+/* 헤더 */
+
+header{
+    padding-top:5px ;
+    display: flex; justify-content: space-between;align-items: center;
+}
+.logo{
+    padding-top: 20px;
+}
+nav{
+    display: flex; flex-direction: column;
+}
+
+
+.sub{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+    color: rgb(146, 146, 149);
+}
+.sub>li{
+    background: url(./img/bg_sideMenu.gif) no-repeat 90% 50%;
+    padding-right: 15px; margin-bottom: 8px;
+}
+.sub>li:last-of-type{
+    background: none;
+    padding: 0;
+}
+
+
+.gnb{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.gnb>li{
+    margin-left: 50px;
+}
+
+
+
+/*메인*/
+
+main{
+    
+}
+
+#asian{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(8, 31, 77);
+    font-size: 5rem;
+}
+.content1{
+    padding-top: 100px;
+}
+/* 첫번째 자식 태그한테 margin-top을 주는것 보다 부모태그에게 padding-top을 주는것이 좋다. 그 이유는 자식태그가 컨텐츠 박스에 놓여있고 컨텐츠 박스안에서 바깥쪽으로 부모태그의 패딩 그리고 보더를 밀어내는것이 자식태그의 마진이기 때문이다. 만약에 부모태그에 패딩과 보더가 없다면 자식태그는 부모태그 바깥을 밀어내서 온전한 값으로 밀어내기 힘들다. */
+
+
+.news{
+    margin-top: 100px;
+    color: rgb(146, 146, 149) ;
+}
+.news>dl{
+    display: flex;
+    position: relative;
+}
+
+.news>dl>dt{ 
+    margin:0 10px;
+    font-weight: bold;
+}
+.news>dl>dt:hover{
+    color: #1c266d;
+    border-bottom: 1px solid #1c266d;
+}
+.news>dl>dt.on{
+    color: #1c266d;
+    border-bottom: 1px solid #1c266d;
+}
+.news>dl dd{
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    width: 40%;
+    padding-top: 20px;
+    transition: all 0.5s 0s;
+}
+/* .news>dl>dt:hover+dd{
+    opacity: 1;
+} */
+.news>dl>dt.on+dd{
+    opacity: 1;
+}
+
+dd>ul>li{display: flex;
+justify-content: space-between;
+margin-top: 5px;}
+b{color: rgb(91, 91, 91); font-weight: bold;}
+
+
+
+
+
+
+/*푸터*/
+footer{
+    margin-top:180px;
+    background: #2b3781;
+    color: white;
+    /*position: relative;*/
+    /*height: 445px*/
+ 
+}
+/*figure{
+    position: absolute;
+    right: 25%;
+}*/
+.footinfo{
+    padding: 30px 0;
+    width: 1000px; margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: url(./img/bg_lower.gif) no-repeat 100% 0;
+}
+.quickmenu>section{
+    margin-right: 55px;
+}
+.quickmenu{display: flex;}
+
+.qol{
+    /* background: url(./img/bg_service.gif)
+    no-repeat 0 4px;
+    padding-left: 12px; */
+    list-style-type: decimal;
+    list-style-position: inside;
+
+}
+.menu1>h3{margin-bottom: 10px;}
+ol>li{margin-top: 5px;}
+
+.menu2>dl{
+    display: flex;
+    position: relative;
+}
+.menu2>dl>dt{width: 50px; text-align: center; background: #1c266d;
+color: gray; margin-right: 5px; }
+
+.menu2>dl>dt:hover{
+    background: #3c54bf;
+    color: white;
+}
+.menu2>dl>dt.on{
+    background: #3c54bf;
+    color: white;
+}
+.menu2>dl>dt:hover+dd{
+    opacity: 1;
+}
+.menu2>dl>dt.on+dd{
+    opacity: 1;
+}
+
+
+.menu2>dl dd{
+    position: absolute;
+    opacity: 0;
+    top: 30px;
+    transition: all 0.5s ease 0s;
+}
+
+.menu3{margin-left: 100px;}
+
+.menu3_1{
+    margin-bottom: 10px;
+}
+
+.bottom{
+    border-top: 1px solid rgb(174, 174, 177);
+    margin-top: 100px;
+    padding-top: 15px;
+    color:rgb(174, 174, 177) ;
+    display: flex;
+    justify-content: space-between;
+}
+.left span{margin-left: 10px;}
+
+
+
+

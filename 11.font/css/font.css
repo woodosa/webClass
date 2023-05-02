@@ -1,0 +1,24 @@
+@font-face{
+    font-family: myfont1;
+    src:url("../font/koryung.ttf");
+}
+@font-face {
+    font-family:"땅쓰라이트";
+    src: url("../font/ddangLight.ttf");
+}
+@font-face {
+    font-family:"DDANG BOLD";
+    src: url("../font/ddangBold.ttf");
+}
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulMyungjo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

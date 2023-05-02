@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>position</h1>
+    <p>일반적인 레이아웃이 아닌 특수한 경우에 자주 사용되는 레이아웃 방식</p>
+
+    <ul>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+    </ul>
+
+
+    <hr>
+
+    <h2>position:relative</h2>
+    <ul>
+        <li>현재 태그가 배치된 공간을 기준으로 이동하는 방법</li>
+        <li>(left:100px) 태그의 왼쪽 테두리 면에서 안쪽으로 100픽셀 떨어진 곳으로 태그가 이동</li>
+        <li>position:relative 속성을 사용해서 태그가 이동하는 경우 원래 배치되어있던 공간 그대로 차지하고 있다.</li>
+    </ul>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit laboriosam adipisci ipsum! Dicta, minus odio. Facilis totam magnam a. Tempore facere aut laborum unde, magni itaque ducimus sapiente similique?
+    </div>
+    <p class="nextp">next ptag</p>
+
+
+        <h2>position:absolute</h2>
+        <p>position:absolute 가 적용된 태그는 자신을 포함하는 상위태그 중에서 가장 가까운 포지션이 적용된 태그의 영역을 기준으로 배치된다. 이때 바디태그는 기본적으로 포지션 상태가 항시 적용되어있다.</p>
+        <p>position:absolute 가 적용된 태그는 공중에 띄워져서 배치되기 때문에 다른 태그의 레이아웃에 영향을 미치지 않는다.</p>
+    <div class="parent">
+        <div class="box2">
+            -center-
+        </div>
+    </div>
+        <p class="nextp">next ptag</p>
+
+        <hr>
+
+        <h2>position:pixed</h2>
+        <p>position:pixed 는 absolute와 동일하지만 기준이 화면기준이라는 점이 다르다.</p>
+</body>
+</html>

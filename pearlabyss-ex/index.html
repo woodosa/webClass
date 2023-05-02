@@ -5,29 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pearlabyss</title>
-    <style>
-        #gnb{display:flex;position:relative;width:1000px;height:50px;margin:0 auto;align-items:center;justify-content:space-between;}
-#gnb>li{}
-#gnb>li>ul{padding:20px 0;position:absolute;left:0;top:50px;width:100%;
-display:flex;flex-wrap:wrap;display:none;}
-#gnb>li:hover>ul{
-display:flex;}   
-#gnb>li>ul>li{width:50%;box-sizing:border-box;}
-#gnb>li>ul>li>ul{display:flex;flex-wrap:wrap;}
-#gnb>li>ul>li>ul>li{width:50%;}
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="div0">
-        <header>
-            <div class="logos"><a href="#"><img src="./pearlabyss/img/cm_bi_black.svg" alt="펄어비스 로고"></a></div>
+    <header>
+        <div class="header">
+            <div class="logos">
+                <a href="#"><img class="logob" src="./pearlabyss/img/cm_bi_black.svg" alt="펄어비스 로고"> <img class="logow" src="./pearlabyss/img/cm_bi_white.svg" alt="."></a>
+            </div>
             <nav>
-                <ul id="gnb">
+                <ul class="gnb">
                     <li><a href="#">소개</a>
                         <ul>
                             <li><a href="#">펄어비스 소개</a></li>
                             <li><a href="#">연구소</a></li>
-                            <li><a href="#">CCP<img src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
+                            <li><a href="#">CCP<img class="ccp" src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
                         </ul>
                     </li>
                     <li><a href="#">게임</a>
@@ -71,114 +67,130 @@ display:flex;}
                 </ul>
             </nav>
             <nav>
-                <ul>
-                    <li><a href="#">KOR</a></li>
+                <ul class="nav">
+                    <li class="on"><a href="#">KOR</a></li>
                     <li><a href="#">ENG</a></li>
                     <li><a href="#">JPN</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
+    <div class="container">
+        
         <main>
             <section>
-                <figure class="banner">
-                    <a href="#"><img src="./pearlabyss/img/blackdesert_logo_kr.png" alt="검은사막"></a>
-                    <a href="#"><video loop autoplay muted>
+                <div class="banner">
+                    <a href="#">
+                        <video loop autoplay muted>
                         <source src="./pearlabyss/video/kor_landing_loop.webm" type="video/webm">
                         <source src="./pearlabyss/video/kor_landing_loop.mp4" type="video/mp4">
-                    </video></a>
-                </figure>
-                <div>
-                    <h2><img src="./pearlabyss/img/blackdesert_logo_kr.png" alt="검은사막"></h2>
-                    <a href="#">자세히보기</a>
+                        <a href="#"><img src="./pearlabyss/img/blackdesert_logo_kr.png" alt="검은사막"></a>
+                  </a>
+                    <p><a href="#">자세히 보기</a></p>
                 </div>
             </section>
             <section class="news">
                 <h3>NEWS</h3>
-                <section>
-                    <dl>
-                        <dt><b><a href="#">'사냥은 이제 그만' 펄어비스 검은사막 새로운 플레이 지금이 기회></a></b></dt>
-                        <dd>2023.03.15</dd>
-                        <dd><p>펄어비스(대표 허진영)의 검은사막이 공헌도 업데이트를 통해 긴규 및 복귀...</p></dd>
-                    </dl>
-                </section>
-                <section>
-                    <dl>
-                        <dt><b><a href="#">펄어비스 검은사막 모바일, 신규 클래스 이그니우스 업데이트</a></b></dt>
-                        <dd>2023.03.14</dd>
-                        <dd><p>펄어비스(대표 허진영)가 검은사막 모바일 신규클래스 '이그니우스'를...</p></dd>
-                    </dl>
-                </section>
-                <section>
-                    <dl>
-                        <dt><a href="#"><b>펄어비스, 검은사막 서비스 3000일 감사 의미를 담아 모험가 이름으로 3000만원 기부</b></a></dt>
-                        <dd>2023.03.13</dd>
-                        <dd><p>펄어비스(대표 허진영)가 검은사막 서비스 3000일에 감사의 의미를 뜻깊게...</p></dd>
-                    </dl>
-                </section>
+                    <ul class="newcon1">
+                        <li>
+                            <h4><a href="#">'사냥은 이제 그만' 펄어비스 검은사막 새로운 플레이 지금이 기회</a></h4>
+                            <p>2023.03.15</p>
+                            <p>펄어비스(대표 허진영)의 검은사막이 공헌도 업데이트를 통해 긴규 및 복귀...</p>
+                        </li>
+                        <li>
+                            <h4><a href="#">펄어비스 검은사막 모바일, 신규 클래스 이그니우스 업데이트</a></h4>
+                            <p>2023.03.14</p>
+                            <p>펄어비스(대표 허진영)가 검은사막 모바일 신규클래스 '이그니우스'를...</p>
+                        </li>
+                        <li>
+                            <h4><a href="#">펄어비스, 검은사막 서비스 3000일 감사 의미를 담아 모험가 이름으로 3000만원 기부</a></h4>
+                            <p>2023.03.13<p></p>
+                            <p>펄어비스(대표 허진영)가 검은사막 서비스 3000일에 감사의 의미를 뜻깊게...</p>
+                        </li>
+                    </ul>
             </section>
-            <section class="main category">
-                <ul>
+            <section class="maincategory">
+                <ul class="card">
                     <li>
                         <a href="#"><img src="./pearlabyss/img/main_category_company.jpg" alt="회사"></a>
-                        <h3>펄어비스</h3>
-                        <p>우리의 비전과 가치</p>
-                        
+                        <div class="on2 card2">
+                            <h3>펄어비스</h3>
+                            <p>우리의 비전과 가치</p>
+                        </div>
+                        <div class="background"> </div>
                     </li>
                     <li>
                         <a href="#"><img src="./pearlabyss/img/main_category_lab.jpg" alt="lab"></a>
-                        <h3>연구소</h3>
-                        <p>한계를 뛰어넘는 곳</p>
+                        <div class="card2">
+                            <h3>연구소</h3>
+                            <p>한계를 뛰어넘는 곳</p>
+                        </div>
+                        <div class="background"> </div>
                     </li>
                     <li>
                         <a href="#"><img src="./pearlabyss/img/main_category_culture.jpg" alt="문화"></a>
-                        <h3>게임</h3>
-                        <p>잊지 못할 모험</p>
+                        <div class="card2">
+                            <h3>게임</h3>
+                            <p>잊지 못할 모험</p> 
+                        </div>
+                        <div class="background"> </div>
                     </li>
                     <li>
                         <a href="#"><img src="./pearlabyss/img/main_category_in.jpg" alt="in"></a>
-                        <h3>문화</h3>
-                        <p>파괴적인 창조자</p>
+                        <div class="card2">
+                            <h3>문화</h3>
+                            <p>파괴적인 창조자</p>
+                        </div>
+                        <div class="background"> </div>
                     </li>
                     <li>
                         <a href="#"><img src="./pearlabyss/img/main_category_news.jpg" alt="news"></a>
-                        <h3>소식</h3>
+                        <div class="card2">
+                            <h3>소식</h3>
                         <p>생생한 펄어비스 이야기</p>
+                        </div>
+                        <div class="background"> </div>
                     </li>
                 </ul>
+                <div class="black">
+
+                </div>
             </section>
             <section class="Bnews">
                 <ul>
                     <li>
-                        <a href="#"><img src="./pearlabyss/img/1.jpg" alt="1"></a>
+                        <figure><a href="#"><img src="./pearlabyss/img/1.jpg" alt="1"></a></figure>
                         <p>펄어비스 소식</p>
                         <p>[펄어비스 뮤직] '어비스 원: 마그누스' 사운드트랙 업데이트!</p>
                     </li>
                     <li>
-                        <a href="#"><img src="./pearlabyss/img/2.jpg" alt="2"></a>
+                        <figure><a href="#"><img src="./pearlabyss/img/2.jpg" alt="2"></a></figure>
                         <p>펄어비스 소식</p>
                         <p>코딩의 가능성을 코딩하다! 펄어비스 청소년 해커톤 대회 '딩가딩 프로젝트'</p>
                     </li>
                     <li>
-                        <a href="#"><img src="./pearlabyss/img/3.jpg" alt="3"></a>
+                        <figure><a href="#"><img src="./pearlabyss/img/3.jpg" alt="3"></a></figure>
                         <p>펄어비스 소식</p>
                         <p>유저와 진심어린 소통, 전세계 이용자가 함께한 '칼페온 연회' 현장</p>
                     </li>
                     <li>
-                        <a href="#"><img src="./pearlabyss/img/5.jpg" alt="5"></a>
+                        <figure><a href="#"><img src="./pearlabyss/img/5.jpg" alt="5"></a></figure>
                         <p>펄어비스 소식</p>
                         <p>자라섬 재즈 페스티벌에서 펼쳐진 특별한 만남, '재즈 인 검은사막'</p>
                     </li>
                 </ul>
             </section>
         </main>
-        <footer>
+    </div>
+    <footer>
+        <div class="fcontainer">
             <section class="top">
-                <ul id>
+                <ul>
                     <li><a href="#">소개</a>
                         <ul>
                             <li><a href="#">펄어비스 소개</a></li>
                             <li><a href="#">연구소</a></li>
-                            <li><a href="#">CCP<img src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
+                            <li><a href="#">CCP<img class="ccp" src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
                         </ul>
                     </li>
                     <li><a href="#">게임</a>
@@ -214,40 +226,37 @@ display:flex;}
                             <li><a href="#">기업지배구조</a></li>
                             <li><a href="#">추가정보</a></li>
                             <li><a href="#">재무정보</a></li>
-                            <li><a href="#">공사공고</a></li>
+                            <li><a href="#">공사&middot;공고</a></li>
                             <li><a href="#">IR자료</a></li>
                             <li><a href="#">지속가능경영</a></li>
                         </ul>
                     </li>
                 </ul>
                
-            </section>>
+            </section>
             <section class="middle">
                 <ul>
                     <li><a href="#"><b>광고/제휴 문의</b></a></li>
                     <li><a href="#"><b>기업윤리 신고센터</b></a></li>
                     <li><a href="#"><b><span style="color: cornflowerblue;">개인정보 처리방침</span></b></a></li>
-                    <li><a href="#"><b>펄어비스 스토어</b> <img src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
-                    <li><a href="#"><b>게임 고객센터</b> <img src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
+                    <li><a href="#"><b>펄어비스 스토어</b> <img class="on ccp" src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
+                    <li><a href="#"><b>게임 고객센터</b> <img class="on ccp" src="./pearlabyss/img/icn_header_new_win.svg" alt="window"></a></li>
                 </ul>
             </section>
-            <section class="botom">
-                <section class="bleft">
-                    <a href="#"><img src="./pearlabyss/img/cm_bi_black.svg" alt="펄어비스"></a>
-                    <p>pearl Abyss Corp.All Rights Reserved</p>
-                </section>
-               <figure class="sns">
-                    <ul>
-                        <li><a href="#"><img src="./pearlabyss/img/icn_footer_facebook_round.svg" alt="facebook"></a></li>
-                        <li><a href="#"><img src="./pearlabyss/img/icn_footer_youtube_round.svg" alt="youtube"></a></li>
-                        <li><a href="#"><img src="./pearlabyss/img/icn_footer_linkedin_round.svg" alt="in"></a></li>
-                    </ul>
-               </figure>
-            </section>
-
-        </footer>
-
-    </div>
-    
+        </div>
+    </footer>
+    <section class="bottom">
+        <section class="bleft">
+            <a href="#"><img src="./pearlabyss/img/cm_bi_black.svg" alt="펄어비스"></a>
+            <p> &copy; pearl Abyss Corp.All Rights Reserved</p>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="./pearlabyss/img/icn_footer_facebook_round.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./pearlabyss/img/icn_footer_youtube_round.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./pearlabyss/img/icn_footer_linkedin_round.svg" alt="in"></a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
 </body>
 </html>

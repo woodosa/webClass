@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: inherit;}
+
+.box{
+    border: 1px solid crimson;
+    width: 400px;height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px 40px 60px 80px; padding: 20px;
+}

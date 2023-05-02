@@ -1,0 +1,49 @@
+*{margin: 0;padding: 0;}
+
+
+
+/* 기본값
+
+.box{width: 900px; height: 900px; margin: 0 auto; background: pink; font-size: 3rem;  }
+
+.box section{border: 1px solid black;}
+*/
+
+
+
+/*.
+1번
+
+box{width: 900px; height: 900px; margin: 0 auto; background: pink; font-size: 3rem; display: flex; flex-direction: row-reverse; }
+
+.box section{border: 1px solid black; flex: 1;}*/
+
+
+
+
+
+/*
+2번
+
+.box{width: 900px; height: 900px; margin: 0 auto; background: pink; font-size: 3rem; display: flex; flex-wrap: wrap;  }
+
+.box section{border: 1px solid black;flex-basis: calc(100%/2); box-sizing: border-box;flex-grow: 1;}*/
+
+
+.box{width: 900px; height: 900px; margin: 0 auto; background: pink; font-size: 3rem; flex-wrap: wrap; display: flex;  justify-content:space-between;
+ }
+
+.box section{border: 1px solid black; 
+ width:calc((100% - 60px)/3);
+  box-sizing: border-box;
+ margin-bottom: 30px;
+}
+.box>section:nth-of-type(7),
+.box>section:nth-of-type(8),
+.box>section:nth-of-type(9){margin-bottom: 0;}
+
+
+
+
+
+

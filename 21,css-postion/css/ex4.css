@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: inherit;}
+dl{}
+
+
+
+.tap{width:500px; margin: 100px auto;}
+dl{
+    position: relative; display: flex; width: 500px; height: 160px; 
+
+}
+
+dt{
+    background: rgb(161, 161, 161);color: black; width: calc(80%/3); margin-right: 40px; height: 30px;display: flex; justify-content: center;align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+dl>dt:hover{background: crimson;color: aliceblue;}
+
+dl>dd{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    /*height: 0;
+    overflow: hidden;*/
+   
+    
+    /*transition은 기준이 명확할 때만 사용이 가능하다 (예: width 300px- width 500px*/
+}
+
+/*dl>dt.on+dd{opacity: 1;}*/
+
+/* dt 태그에 on클래스가 추가되면 다음형제 dd태그는 보이도록 설정이 된다 css는 html을 감시하고 있다가 태그조건이 변경되면 변경된 조건으로 스타일을 표현한다.*/
+
+.tap>dl>dt:hover+dd{display: block; opacity: 1; /*height: 100%;*/}
+
+
+
+

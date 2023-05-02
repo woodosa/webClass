@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>display - 태그의 형태</h1>
+    <p>태그의 생김새 - 기본적으로 직사각형</p>
+    <p>전제 - 우리가 입력한 태그는 먼저 만들어진 순서대로 위에 하나씩 쌓이는 거꾸로하는 테트리스 같다</p>
+    <ul>
+        <li>block - 90%차지</li>
+        <li>inline - 8%</li>
+        <li>inline-block - 2%</li>
+    </ul>
+    <hr>
+    <h2>block - 블록레벨태그</h2>
+    <p>display:block; 으로 설정되어 있음.</p>
+    <p>포함되는 컨텐츠의 양과 관계없이 무조건 부모태그만큼의 폭의 너비를 다 차지하는 형태.</p>
+    <p>br태그를 사용하지 않아도 부모태그의 너비를 다 차지하고 있기 때문에 자동으로 줄 바꿈이 된다.</p>
+    <p class="box">
+        h1,h2,h3 ...,p,address,blockquote,div,
+        ul,li,ol,dl,dt,dd,header,nav,footer,section,
+        article,aside,...
+    </p>
+    <h2>inline - 인라인레벨태그</h2>
+    <p>display:inline;</p>
+    <p>포함되는 컨텐츠의 양만큼 공간을 차지하는 형태</p>
+    <p>포함하는 컨텐츠의 양만큼 공간을 차지하기 때문에 줄바꿈 되지않고 나란히 배치될 수 있다.</p>
+    <p>라인형태이기 때문에 가로와 세로사이즈를 지정해도 변화가 없다.</p>
+    <p>
+        span,i,em,strong,b,sup,a,input,label...
+    </p>
+    <p>박스형태의 태그 - 가로와 세로사이즈를 지정할 수 있다.</p>
+    <span> span태그 </span>
+    <span> span태그 </span>
+    <span class="line"> span태그Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta reiciendis architecto provident ratione, veniam beatae tempora nobis a ipsum modi optio fugit, libero id placeat, officiis dolor voluptatem. Mollitia! </span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta reiciendis architecto provident ratione, veniam beatae tempora nobis a ipsum modi optio fugit, libero id placeat, officiis dolor voluptatem. Mollitia!</p>
+    <h2>inline-block - 인라인블록레벨태그</h2>
+    <p>display:inline-blcok;으로 설정되어있음</p>
+    <p>블록레벨과 인라인레벨 특징을 반반 섞은 형태</p>
+    <p>인라인레벨태그처럼 포한하는 컨텐츠의 양만큼 공간을 차지하여 나란히 배치될 수 있다.</p>
+    <p>블록레벨태그처럼 가로와 세로 사이즈를 지정할 수 있는 박스형태이다.</p>
+    <p>
+        img,video,input,select,textarea...
+    </p>
+    <p>block-항상 다음 줄로 가는형태,inline-옆에 배치할 수 있지만 사이즈 변화x, inline-block - 옆에 배치도 가능하고 사이즈도 변화가능한 형태.</p>
+    <select name="text">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+    </select>
+
+</body>
+</html>

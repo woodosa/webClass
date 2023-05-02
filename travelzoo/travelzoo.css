@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: rgb(26, 102, 189);}
+ul{list-style: none;}
+
+
+
+
+html{font-family: 'Noto Sans KR', sans-serif; font-size: 12px;}
+.container{margin: 30px auto; width: 820px;}
+
+
+/* header- */
+header>p{color: gray; font-style: italic; border-bottom:5px solid rgb(26, 102, 189) ; margin-top: 15px;}
+.subheader>h2{font-size: 2rem; font-weight: bold; margin: 15px 0 10px 0;}
+.subheader>form{background: rgb(245, 245, 245); border: 1px solid gray; padding: 5px;}
+.subheader form *{vertical-align: middle;}
+
+
+/* main- */
+main>div{width: calc((100% - 40px)/3); float: left ;}
+li{margin-bottom: 20px;}
+.box1,.box2{margin-right: 20px;}
+main>div>h3{font-weight: bold; margin: 15px 0 10px 0; border-bottom:1px solid rgb(166, 165, 165); padding-bottom: 5px;}
+
+.national_list>li>img{float: left; margin-right: 10px;}
+
+main::after{content: ""; display: block; clear: both; margin-bottom: 80px;} 
+
+/* float를 사용하면 암묵적으로 inline-blcok형태로 전환된다.*/
+
+
+/* footer- */
+footer{border: 1px solid gray; background:rgb(245, 245, 245) ; padding: 10px; box-sizing: border-box; }
+h5>img{margin: 0 3px;}
+b{font-weight: bold;}
+.fleft{;float: left; margin-right: 200px;}
+.fleft>dl>*{float: left;}
+.fleft>p{margin-top: 10px}
+.fright{;float: right;}
+dd>img{margin:0 5px 0 5px;}
+footer::after{content: ""; display: block; clear: both;}
+.fleft>p>span{color: gray;}
+
+footer img {vertical-align: middle;}

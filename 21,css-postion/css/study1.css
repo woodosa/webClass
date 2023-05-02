@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0;}
+
+body{height: 1000vh;}
+.box{
+    border: 1px solid black;
+    position: relative;
+}
+.nextp{
+    background: cadetblue; color: aliceblue;
+}
+.box2{border: 10px solid crimson;
+position: fixed;
+left: 50%; bottom:50%;}
+
+.parent{
+    width: 100px; height: 100px;
+ 
+    /*border: 10px solid orange;*/
+    position: relative;
+}

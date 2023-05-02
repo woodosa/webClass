@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: inherit;}
+
+@font-face {
+    font-family: "풀무원";
+    src: url(../예제1/PulmuoneLOHASBold.woff);
+}
+
+.html{font-family: 'Noto Sans KR', sans-serif; font-size: 20px;
+}
+
+.container{width: 980px; margin: 0 auto;}
+.container>h2{font-size: 22px; font-weight: bold; margin-top: 40px;}
+.container>p{margin-top: 35px;}
+.p1{margin-bottom: 100px;}
+.container>h1{font-family: "풀무원"; font-size: 30pt;font-weight: bold; margin-top: 70px; margin-bottom: 35px;}
+

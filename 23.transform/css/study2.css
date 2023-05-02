@@ -1,0 +1,84 @@
+*{margin: 0;padding: 0;}
+.box{
+    border: 1px solid crimson;
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+    transition: all 0.5s ease 0s;
+}
+@keyframes woorotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.a{
+    animation: woorotate 0.4s linear 0s infinite;
+} 
+/*  *animation-name: woorotate;
+animation-duration: 
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-iteration-count: 4;
+animation-direction: alternate; */
+
+
+
+
+@keyframes woo1{
+    0%{transform: translateX(-50%) translateY(50%);}
+    25%{transform: translateY(-50%) translatex(-50%);}
+    50%{transform: translateX(50%) translateY(-50%);}
+    75%{transform: translateY(50%) translateX(50%);}
+    100%{transform: translateX(-50%) translateY(50%) ;}
+}
+@keyframes woo2{
+    0%{transform: translate(-50%, 50%);}
+    25%{transform: translate(-50%, -50%);}
+    50%{transform: translate(50%, -50%);}
+    75%{transform: translate(50%, 50%);}
+    100%{transform: translate(-50%, 50%);}
+}
+@keyframes woo3{
+    0%{transform: translate(0%, 0%);}
+    25%{transform: translate(100%, 0%);}
+    50%{transform: translate(100%, 100%);}
+    75%{transform: translate(0%, 100%);}
+    100%{transform: translate(0%, 0%);}
+}
+
+
+.b{
+    width: 400px;
+    height: 400px;
+    background: blue;
+    animation: woo1 3s linear 0s infinite;
+    border: none;
+} 
+.c{
+    width: 400px;
+    height: 400px;
+    background: red;
+    animation: woo2 3s linear 0s infinite;
+    border: none;
+}
+.d{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    animation: woo3 3s linear 0s infinite;
+    border: none;
+}
+.d:hover{
+    animation-play-state: paused;
+    /*마우스를 올렸을 때 애니메이션이 일시정지 됨*/
+    border-radius: 50%;
+}
+
+span{
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+span:hover{
+    transform:rotate(90deg);
+}
