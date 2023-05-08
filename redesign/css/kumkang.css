@@ -1,0 +1,196 @@
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none;color: inherit;}
+ol,ul{list-style:none;}
+
+@font-face {
+    font-family: "century";
+    src: url(../source/font/CENTURY.TTF);
+}
+
+
+
+
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    /* background: #294433;*/
+    color: #D7C08E;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+header:hover{
+    width: 100%;
+    height: 80px;
+    background: #294433;
+    color: #D7C08E;
+}
+
+
+.headL{
+    width: 50px;
+    height: 30px;
+    margin-left: 100px;
+
+}
+.headL>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    top: 50%;
+    width: 180px;
+    height: 35px;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+.headR{
+    margin-right: 100px;
+}
+.headR>ul{
+    display: flex;
+}
+.headR>ul>li{
+    padding-right: 50px;
+}
+.headR>ul>li:last-of-type{
+    padding-right: 0 ;
+}
+
+
+
+
+
+.menubutton{
+    width: 40%;
+    position: fixed;
+    height: 100%;
+    display: none;
+    left: 0;
+    top: 0;
+    background: #294433;
+    color: #D7C08E;
+}
+
+
+
+
+
+/*메인*/
+
+.videobanner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0; 
+    left: 0;
+}
+
+.videobanner>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;   
+}
+ .bgop{
+   position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 40%;
+}
+.bgop+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    width: 30%;
+    height: 20%;
+}
+.bgop+div>h1{
+    position: absolute;
+    transform: translate(-100%, -70%);
+    font-size: 6rem;
+    font-family:"century";
+    color: #D7C08E;
+}
+.bgop+div>h1>span{
+    margin-left: 34%;
+}
+.bgop+div>h2{
+    position: absolute;
+    transform: translate(-100%, +180%);
+    font-size: 1.5rem;
+    font-family:'Noto Sans KR', sans-serif;
+    color: #D7C08E;
+}
+
+
+
+
+
+
+/*비스포크*/
+
+
+.bespoke{
+    margin-top: 1380px;
+}
+.bespoke>video{
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    object-fit: contain;
+    left: 10%
+}
+.bespoke>h1{
+    margin-top: 750px;
+}
