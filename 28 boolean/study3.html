@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>삼항 연상자</h1>
+    <p>기본형태 ? (조건의 결과가 참일때 남는 값: 조건의 결과가 거짓일 때 남는값)</p>
+    <script>
+    //    alert(5>3?"열심히하자":"좀만자자") 열심히하자
+        // alert(!(100>20)?30:25) 25
+        // alert(20>10?50>20:30?30:40)
+        // 50<20 ? 30 : 40>20 ? 20: 30>20? 10: 0 
+
+
+
+        // 사용자에게 나이를 물어보고 20세 이상이라면 입장가능합니다.
+        // 그렇지 않다면 입장이 불가능합니다. 라는 알림창이 나올 수 있도록
+        // 소스코드를 작성해 보세요.
+
+        let a = Number(prompt(`나이를 입력해 주세요`))   
+
+        document.wirte( a>=20?"입장이 가능합니다.":"입장이 불가능합니다." )
+        
+    </script>
+</body>
+</html>

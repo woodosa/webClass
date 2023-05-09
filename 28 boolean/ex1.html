@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        사용자에게 이름과 국어 영어 수학 점수를 물어보고, 
+        평균점수를 계산하여 평균점수가 90점 이상이라면 a등급,
+        80점 이상이라면 b등급
+        70점 이상이라면 c등급,
+        70점 미만이라면 d등급
+    </p>
+
+    <script>
+
+        let name = prompt(`이름을 입력하시오`);
+        let a = Number(prompt(`국어 점수를 입력하시오`));
+        let b = Number(prompt(`수학 점수를 입력하시오`));
+        let c = Number(prompt(`영어 점수를 입력하시오`));
+        let average = (a+b+c)/3;
+        let grade = average>=90?"A": average>=80?"B" : average<70? "D":"C";
+
+        document.write(`${name}님의 평균점수는 ${Number(average)}이며 ${grade}등급 입니다.`)
+
+    </script>
+</body>
+</html>

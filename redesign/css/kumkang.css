@@ -21,10 +21,11 @@ html{
 }
 
 
-.container{
+/* .container{
     width: 1200px;
     margin: 0 auto;
-}
+} */
+h1{font-family:"century";}
 
 
 
@@ -38,7 +39,7 @@ header{
     height: 80px;
     position: fixed;
     display: flex;
-    /* background: #294433;*/
+    /* background: #294433; */
     color: #D7C08E;
     left: 0;
     top: 0;
@@ -124,6 +125,7 @@ header:hover{
 
 /*메인*/
 
+
 .videobanner{
     position: absolute;
     width: 100%;
@@ -136,36 +138,29 @@ header:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 2;   
+    z-index: 2;
+    filter: brightness(0.4);   
 }
- .bgop{
-   position: absolute;
-    left: 0;
-    top: 0;
-    background: black;
-    width: 100%;
-    height: 100vh;
-    opacity: 40%;
-}
-.bgop+div{
+
+.videobanner>div{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 56%;
     
     width: 30%;
     height: 20%;
 }
-.bgop+div>h1{
+.videobanner>div>h1{
     position: absolute;
     transform: translate(-100%, -70%);
     font-size: 6rem;
     font-family:"century";
     color: #D7C08E;
 }
-.bgop+div>h1>span{
+.videobanner>div>h1>span{
     margin-left: 34%;
 }
-.bgop+div>h2{
+.videobanner>div>h2{
     position: absolute;
     transform: translate(-100%, +180%);
     font-size: 1.5rem;
@@ -181,16 +176,80 @@ header:hover{
 /*비스포크*/
 
 
-.bespoke{
-    margin-top: 1380px;
+.main_bespoke{
+    margin-top: 1330px;
+    position: relative;
+    height: 1400px;
 }
-.bespoke>video{
+.main_bespoke>div{
+    position: relative;
+    height: 600px;
+
+}
+
+.main_bespoke>div>video{
     position: absolute;
-    width: 1280px;
-    height: 720px;
+    width: 1024px;
+    height: 600px;
     object-fit: contain;
-    left: 10%
+    left: 10%;
+    filter: brightness(1.2);
 }
-.bespoke>h1{
-    margin-top: 750px;
+
+.main_bespoke>div>h1{
+    position: absolute;
+   /* padding-top: 770px; */
+   font-size: 6rem;
+   color: #294433;
+   text-transform: uppercase;
+   /* margin-left: 100px; */
+   left: 32.5%;
+   top: -20%;
+}
+#bpbg{
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    width: 1200px;
+    height: 738px ;
+    object-fit: cover;
+}
+.main_bespoke>section{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_bespoke>div>h1>span{
+    padding-left: 210px;
+}
+.bpcontent>h2{
+    font-size: 28px;
+    color: #294433;
+    margin-bottom: 100px;
+}
+.bpcontent{
+    border: 1px solid slateblue;
+    padding-top: 210px;
+   width: 360px;
+}
+.bpcontent p{
+    margin-top: 15px;
+
+}
+.bpcontent p+p{
+    /* border-bottom: 1px; */
+    padding-bottom: 105px;
+    /* width: 360px; */
+    border-bottom: 1px solid #294433;
+
+}
+.bpcontent>a{
+    float: right;
+}
+.bpcontent>a>img{
+    width: 35px;
+    height: 25px;
+    object-fit: contain;
+    vertical-align: middle;
 }
