@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 address,em,i{font-style: normal;}
 strong,b{font-weight: normal;}
 a{text-decoration: none;color: inherit;}
@@ -17,7 +17,7 @@ ol,ul{list-style:none;}
 html{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 
@@ -26,6 +26,7 @@ html{
     margin: 0 auto;
 } */
 h1{font-family:"century";}
+h2{font-weight: 400;}
 
 
 
@@ -123,7 +124,7 @@ header:hover{
 
 
 
-/*메인*/
+/*메인_비디오배너*/
 
 
 .videobanner{
@@ -146,7 +147,7 @@ header:hover{
     position: absolute;
     left: 50%;
     top: 56%;
-    
+    color: rgb(221, 221, 221);
     width: 30%;
     height: 20%;
 }
@@ -155,7 +156,7 @@ header:hover{
     transform: translate(-100%, -70%);
     font-size: 6rem;
     font-family:"century";
-    color: #D7C08E;
+    /* color: #D7C08E; */
 }
 .videobanner>div>h1>span{
     margin-left: 34%;
@@ -165,7 +166,8 @@ header:hover{
     transform: translate(-100%, +180%);
     font-size: 1.5rem;
     font-family:'Noto Sans KR', sans-serif;
-    color: #D7C08E;
+    font-weight: 400;
+    /* color: #D7C08E; */
 }
 
 
@@ -173,13 +175,13 @@ header:hover{
 
 
 
-/*비스포크*/
+/*메인_비스포크*/
 
 
 .main_bespoke{
     margin-top: 1330px;
     position: relative;
-    height: 1400px;
+    height: 1500px;
 }
 .main_bespoke>div{
     position: relative;
@@ -199,7 +201,7 @@ header:hover{
 .main_bespoke>div>h1{
     position: absolute;
    /* padding-top: 770px; */
-   font-size: 6rem;
+   font-size: 120px;
    color: #294433;
    text-transform: uppercase;
    /* margin-left: 100px; */
@@ -210,12 +212,11 @@ header:hover{
     position: absolute;
     bottom: 0;
     right: 0%;
-    width: 1200px;
+    width: 1180px;
     height: 738px ;
     object-fit: cover;
 }
 .main_bespoke>section{
-    border: 1px solid red;
     width: 1200px;
     margin: 0 auto;
 }
@@ -229,7 +230,6 @@ header:hover{
     margin-bottom: 100px;
 }
 .bpcontent{
-    border: 1px solid slateblue;
     padding-top: 210px;
    width: 360px;
 }
@@ -245,11 +245,118 @@ header:hover{
 
 }
 .bpcontent>a{
-    float: right;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
 }
-.bpcontent>a>img{
+/* .linkpoint{
     width: 35px;
     height: 25px;
-    object-fit: contain;
-    vertical-align: middle;
+    background-image: url(../source/img/icon/SVG/바로가기.svg)no-repeat;
+    background-size:contain ;
+    color: #294433;
+
+} */
+
+
+
+
+/* 메인_헤리티지리갈 페이지*/
+
+.heritage{
+    background: #294433;
+    color: #D7C08E;
+    height: 970px;
+    position: relative;
 }
+.heritage>img{
+    width: 887px;
+    height: 806px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+.heritage>section{
+    width: 1200px;
+    margin: 0 auto;
+}
+.heritage>section>article>h1{
+    position: absolute;
+    top: 75px;
+    left: 10%;
+    font-size: 120px;
+    text-transform:uppercase;
+
+}
+.heritage>section>article>h2{
+    padding-top: 210px;
+    font-size:28px ;
+}
+.heritage>section>article{
+    width: 518px;
+}
+.heritage>section>article>p{
+    color: #ddd;
+    margin-top: 150px;
+    padding-bottom: 105px;
+    /* width: 360px; */
+    border-bottom: 1px solid #D7C08E;
+}
+.heritage>section>article>p>span{
+    color: #D7C08E;
+}
+
+
+.heritage>section>article>a{
+    margin-top: 15px;
+    float: right;
+}
+.gwtext{
+    display: none;
+}
+
+
+
+/*메인_스타일가이드*/
+
+
+.styleguide{
+    
+    position: relative;
+    height: 970px;
+    background: #294433;
+    color: #D7C08E;
+}
+
+.styleguide>section{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.styleguide>section>h1{
+    position: absolute;
+    left: 50%;
+    top: 75px;
+    transform: translateX(-50%);
+    font-size: 120px;
+}
+
+.styleguide>section>h2{
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+    color: #ddd;
+    padding: 70px 0;
+}
+/* .styleguide>section>h2::before{
+    content: "";
+    border: #D7C08E 1px solid;
+    width: 170px;
+} */
+
+.styleguide>section>ul{}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let height=Number(prompt(`신장을 입력해주세요`));
+        let weight=Number(prompt(`체중을 입력해주세요`));
+        let bmi= Number(weight/(Math.pow((height/100),2)));
+        let bmiresult; //= bmi>=25?`비만입니다`:bmi>=23 && bmi<=24.9?"과체중입니다":bmi>=18.5 && bmi<=22.9?`정상입니다`: `저체중입니다`
+
+
+        // alert(bmi)
+        if(bmi>=25){(bmiresult = `비만입니다`)}
+        else if(bmi>=23 && bmi<=24.9){(bmiresult = `과체중입니다`)}
+        else if(bmi>=18.5 && bmi<=22.9){(bmiresult = `정상체중입니다`)}
+        else{bmiresult = `저체중입니다.`}
+
+        
+        
+
+     document.write(
+        `당신의 키는 ${height}cm이고 몸무게는 ${weight}입니다. bmi수치는 ${//Math.round(
+            bmi}이며 ${bmiresult}`
+        //  if(bmi>=25){(`비만입니다`)}
+        //  else if(bmi>=23 && bmi<=24.9){(`과체중입니다`)}
+        //  else if(bmi>=18.5 && bmi<=22.9){(`정상체중입니다`)}
+        //  else{`저체중입니다.`}
+         )
+         
+        
+        
+
+    </script>
+</body>
+</html>

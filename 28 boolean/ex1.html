@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .gradestyle{
+            border:5px double crimson;
+            width: 500px;
+            margin: 0 auto;
+            border-left: none;
+            border-right: none;
+        }
+        .gradestyle th{
+            border: 1px dotted black;
+            font-weight: bold;
+            padding: 5px 0;
+            border-left: none;
+        }
+        .gradestyle td{
+            border: 1px dotted black;
+            padding: 5px 0;
+            text-align: center;
+            border-right: none;
+        }
+        .gradestyle tr:last-of-type{
+            background: crimson;
+            color: white;
+        }
+        caption{
+            font-size: 2rem;
+            
+        }
+    </style>
 </head>
 <body>
     <p>
@@ -15,6 +47,7 @@
         70점 미만이라면 d등급
     </p>
 
+
     <script>
 
         let name = prompt(`이름을 입력하시오`);
@@ -24,7 +57,35 @@
         let average = (a+b+c)/3;
         let grade = average>=90?"A": average>=80?"B" : average<70? "D":"C";
 
-        document.write(`${name}님의 평균점수는 ${Number(average)}이며 ${grade}등급 입니다.`)
+        // document.write(`${name}님의 평균점수는 ${Number(average)}이며 ${grade}등급 입니다.`)
+        document.write(`<table class="gradestyle">
+        <caption>${name}님의 성적표</caption>
+        <tr>
+            <th>국어</th>
+            <td>${a}점</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td>${b}점</td>
+        </tr>
+        <tr>
+            <th>수학</th>
+            <td>${c}점</td>
+        </tr>
+        <tr>
+            <th>총합</th>
+            <td>${a+b+c}점</td>
+        </tr>
+        <tr>
+            <th>평균</th>
+            <td>${average}점</td>
+        </tr>
+        <tr>
+            <th>등급</th>
+            <td>${grade}</td>
+        </tr>
+    </table>`)
+
 
     </script>
 </body>
