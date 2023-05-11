@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            border-collapse:collapse ;
+        }
+        .bmistyle{
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 2rem;
+
+
+        }
+        caption{
+            font-size: 4rem;
+            color: crimson;
+            font-weight: 700;
+        }
+        .bmistyle th{
+            font-weight: bold;
+            border: 3px solid crimson;
+            border-left:none ;
+            padding: 10px 0;
+        }
+        .bmistyle td{
+            text-align: center;
+            border: 3px solid crimson;
+            border-right:none ;
+            padding: 10px 0;
+        }
+        .bmistyle tr:last-of-type{
+            background: crimson;
+            color: white;
+        }
+        
+        
+    </style>
 </head>
 <body>
-    <script>
 
+    <script>
+        let name = prompt(`이름을 입력해주세요`)
         let height=Number(prompt(`신장을 입력해주세요`));
         let weight=Number(prompt(`체중을 입력해주세요`));
         let bmi= Number(weight/(Math.pow((height/100),2)));
@@ -32,7 +68,26 @@
         //  else if(bmi>=18.5 && bmi<=22.9){(`정상체중입니다`)}
         //  else{`저체중입니다.`}
          )
-         
+    document.write(`<table class="bmistyle">
+        <caption>${name}님의 비만도 검사결과</caption>
+        <tr>
+            <th>신장</th>
+            <td>${height}cm</td>
+        </tr>
+        <tr>
+            <th>체중</th>
+            <td>${weight}kg</td>
+        </tr>
+        <tr>
+            <th>bmi</th>
+            <td>${Math.round(
+            bmi)}</td>
+        </tr>
+        <tr>
+            <th>결과</th>
+            <td>${bmiresult}</td>
+        </tr>
+    </table>`)
         
         
 

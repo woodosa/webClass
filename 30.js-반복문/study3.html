@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for 반복문</h1>
+    <p>반복문에 필요한 요소를 다 갖춘 형태</p>
+    <p>기본형 - for(반복변수;조건식;증감식){반복할 소스 코드}</p>
+
+    <script>
+        document.write(`<ul class="gugudan">`)
+        for(let a=1;a<=9;a++){
+                document.write(`<li>${a}단</li>`)
+                for(let b=1;b<=9;b++){
+                    document.write(`<ul>`) 
+                                 document.write(`<li>${a}x${b}=${a*b}</li>`)        
+                    document.write(`</ul>`)
+                }
+                // document.write(`<li></li>`)
+                //         document.write(`<li>${b}x${a}=${a*2}</li>`)
+
+
+                                // document.write(`<li>${a}단
+                                //     ${document.write(`<ul>`)
+                                //     }
+                                //         ${document.write(`<li>${for(let a=1;a<=9;a++){
+                                //             document.write(`<li>${a}`)
+                                //         }}</li>`)
+                                //     }
+                                //     ${document.write(`<ul>`)
+                                //     }
+                                //     </li>`)
+        }
+        document.write(`</ul>`)
+    </script>
+</body>
+</html>

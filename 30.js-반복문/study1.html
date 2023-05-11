@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>반복문</h1>
+
+    <h3>while 반복문</h3>
+    <p> while(조건){반복할 소스코드}</p>
+    <p>조건이 참인 동안 소스코드를 반복한다. 조건이 거짓이되어야 반복이 멈춘다.</p>
+    <p>반복문에서는 의도한 횟수만큼 반복을 시키기위한 구성요소가 3가지가 있다.</p>
+    <ul>
+        <li>반복의 조건</li>
+        <li>반복에 사용될 변수</li>
+        <li>반복에 사용될 변수의 증감식</li>
+    </ul>
+
+    <ul>
+        <li>구구단 계산기
+            <ul>
+                <script>
+                    let abc = Number(prompt(`원하시는 구구단을 입력해주세요`))
+                    let k = 0;
+                    let answer;
+                    while(k<9){
+                        k++
+                        answer=k*abc
+                        document.write(`<li>${abc}x${k}=${answer}</li>`)
+                        // document.write(`<li>2x${k}=${k*2}</li>`)
+                    }
+                </script>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        
+        // let i = 0;
+        // let r = Math.round(Math.random()*255)
+        // let g = Math.round(Math.random()*255)
+        // let b = Math.round(Math.random()*255)
+
+        // while(i<100){
+        //     // i++
+        //     // i+=1
+        //     // i=i+1   모두 같은 표현
+        //     i++
+        //     document.write(`<span style="color:rgb(${r},${g},${b})">반복한다<span>`)
+        // }
+
+        // let k = 10
+        // while(k>0){
+        //     // k=k-1
+        //     // k-=1 모두 같은 표현
+        //     k--
+        //     document.write(`반복한다`+k+"<br>")}
+
+
+                // while(k>0){
+        //     // k=k-1
+        //     // k-=1 모두 같은 표현
+        //     k--
+        //     document.write(`반복한다`+k+"<br>")}
+
+        
+    </script>
+</body>
+</html>
