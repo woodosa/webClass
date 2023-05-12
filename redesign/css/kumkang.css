@@ -25,7 +25,10 @@ html{
     width: 1200px;
     margin: 0 auto;
 } */
-h1{font-family:"century";}
+h1{
+    font-family:"century";
+    white-space: nowrap;
+}
 h2{font-weight: 400;}
 
 
@@ -133,6 +136,7 @@ header:hover{
     height: 100vh;
     top:0; 
     left: 0;
+    z-index: 400; 
 }
 
 .videobanner>video{
@@ -140,7 +144,8 @@ header:hover{
     height: 100%;
     object-fit: cover;
     z-index: 2;
-    filter: brightness(0.4);   
+    filter: brightness(0.4); 
+  
 }
 
 .videobanner>div{
@@ -194,7 +199,8 @@ header:hover{
     width: 1024px;
     height: 600px;
     object-fit: contain;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-75%);
     filter: brightness(1.2);
 }
 
@@ -205,13 +211,15 @@ header:hover{
    color: #294433;
    text-transform: uppercase;
    /* margin-left: 100px; */
-   left: 32.5%;
+   left: 50%;
+   transform: translateX(-50%);
    top: -20%;
 }
 #bpbg{
     position: absolute;
-    bottom: 0;
-    right: 0%;
+    bottom: 0%;
+    right: 50%;
+    transform: translateX(80.5%);
     width: 1180px;
     height: 738px ;
     object-fit: cover;
@@ -307,7 +315,8 @@ header:hover{
 .heritage>section>article>h1{
     position: absolute;
     top: 75px;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-70%);
     font-size: 120px;
     text-transform:uppercase;
 
@@ -629,12 +638,50 @@ header:hover{
 
 
 
+.main_controler>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 0.75px solid #D7C08E;
+    padding-right: 30px;
+    position: fixed;
+    right: 2%;
+    top: 20%;
+    height: 280px;
+    color: #D7C08E;
+    z-index: 300;
+
+    
+
+}
+.main_controler>ul>li{
+    opacity: 40%;
+}
+.main_controler>ul .on{
+    opacity: 1;
+}
+
 /*푸터*/
 
 
 
 footer{
+    z-index: 900;
+    position: relative;
     background: #294433;
     width: 100%;
     
+}
+footer>img{
+    
+    width: 300px;
+    height: 90px;
+    object-fit: contain;
+
+}
+footer>section{
+        width: 1820px;
+        margin: 0 auto;
+        display: flex;
+
 }

@@ -10,32 +10,18 @@
     <h1>for 반복문</h1>
     <p>반복문에 필요한 요소를 다 갖춘 형태</p>
     <p>기본형 - for(반복변수;조건식;증감식){반복할 소스 코드}</p>
-
-    <script>
-        document.write(`<ul class="gugudan">`)
-        for(let a=1;a<=9;a++){
-                document.write(`<li>${a}단</li>`)
-                for(let b=1;b<=9;b++){
-                    document.write(`<ul>`) 
-                                 document.write(`<li>${a}x${b}=${a*b}</li>`)        
-                    document.write(`</ul>`)
-                }
-                // document.write(`<li></li>`)
-                //         document.write(`<li>${b}x${a}=${a*2}</li>`)
-
-
-                                // document.write(`<li>${a}단
-                                //     ${document.write(`<ul>`)
-                                //     }
-                                //         ${document.write(`<li>${for(let a=1;a<=9;a++){
-                                //             document.write(`<li>${a}`)
-                                //         }}</li>`)
-                                //     }
-                                //     ${document.write(`<ul>`)
-                                //     }
-                                //     </li>`)
-        }
-        document.write(`</ul>`)
-    </script>
+    <div class="gugudan" style="display: flex;flex-wrap: wrap;">
+        <script>
+            for(let a=2;a<=9;a++){
+                document.write(`<ul><li>
+                        ${a}단<ul>`) 
+                    for(let b=1;b<=9;b++){
+                                     document.write(`<li>${a}x${b}=${a*b}</li>`)        
+                    }
+                document.write(`</ul></li></ul>`) 
+            }
+        </script>
+    </div>
+    
 </body>
 </html>
