@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>무비차트</h2>
+
+        <ol class="moviechart">
+            <script>
+                let moviechart=[
+                    {
+                        rank:1,
+                        image:`./img/img1.jpg`,
+                        name:`가디언즈오브갤럭시-volum3`,
+                        BookingRate:40.8
+                    },
+                    {
+                        rank:2,
+                        image:`./img/img2.jpg`,
+                        name:"분노의 질주-라이드 오어 다이",
+                        BookingRate:17.2
+                    },
+                    {
+                        rank:3,
+                        image:`./img/img3.jpg`,
+                        name:"슈퍼마리오 브라더스",
+                        BookingRate:7.2
+                    },
+                    {
+                        rank:4,
+                        image:`./img/gim4.jpg`,
+                        name:"더 퍼스트 슬램덩크",
+                        BookingRate:5.8
+                    },
+                    {
+                        rank:5,
+                        image:`./img/img5.jpg`,
+                        name:"레디마이데드바디",
+                        BookingRate:5.7
+                    }
+                ]
+                // let moviechart = 
+                // [
+                //     [   
+                //         1,
+                //         `./img/img1.jpg`,
+                //         `가디언즈오브갤럭시-volum3`,
+                //         40.8
+                //     ],
+                //     [
+                //         2,
+                //         `./img/img2.jpg`,
+                //         "분노의 질주-라이드 오어 다이",
+                //         17.2
+                //     ],
+                //     [
+                //         3,
+                //         "./img/img3.jpg",
+                //         "슈퍼마리오 브라더스",
+                //         7.7
+                //     ],
+                //     [
+                //         4,
+                //         "./img/gim4.jpg",
+                //         "더 퍼스트 슬램덩크",
+                //         5.8
+                
+                //     ],
+                //     [
+                //         5,
+                //         "./img/img5.jpg",
+                //         "레디마이데드바디",
+                //         5.7
+                //     ]
+                //  ]
+
+                for( let i =0; i<moviechart.length; i++){
+                    document.write(
+                            `<li>
+                                <figure>
+                                    <img src=${moviechart[i].image} alt=${moviechart[i].name}>
+                                    <span>${moviechart[i].rank}</span>
+                                    <ul class="hiddenmenu">
+                                        <li><a href="#">상세보기</a></li>
+                                        <li><a href="#">예매하기</a></li>
+                                    </ul>
+                                </figure>
+                                    <h3>${moviechart[i].name}</h3>
+                                    <p>예매율${moviechart[i].BookingRate}%</p>
+                     
+                             </li>`
+                         )
+                     }
+            </script>
+            
+        </ol>
+    </div>
+    
+
+</body>
+</html>

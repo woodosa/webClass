@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        국어점수:
+        영어점수:
+        수학점수:
+
+        세개의 점수를 매개로하여 평균값을 계산하여 리턴하는 함수를 만들어 보시오.
+    </p>
+
+    <script>
+        // let ko= Number(prompt("국어점수를 입력해주세요"))
+        // let en= Number(prompt("영어점수를 입력해주세요"))
+        // let ma= Number(prompt("수학점수를 입력해주세요"))
+
+
+        // function getAver(ko,en,ma){
+        //     return (ko+en+ma)/3
+        // }
+        // let average=(getAver(ko,en,ma))
+
+        // document.write(average)
+    </script>
+    <p>
+        평균점수를 재료로 하여 등급을 리턴하는 함수를 만들어 보시오
+        평균점수가 90점이면 a 
+                   80점이면 b
+                   70점이면 c
+                   그 미만이면 d
+    </p>
+
+
+    <h1 style="color: black;">
+    <script>
+        let ko= Number(prompt("국어점수를 입력해주세요"))
+        let en= Number(prompt("영어점수를 입력해주세요"))
+        let ma= Number(prompt("수학점수를 입력해주세요"))
+
+
+        function getAver(ko,en,ma){
+            return (ko+en+ma)/3
+        }
+        let average=(getAver(ko,en,ma))
+           
+
+        function getGrade(average){
+        //    return average>=90?`A`:average>=80?`B`:average>=70?`C`:`D`
+
+           
+           if(average>=90){
+            let grade;
+            
+            grade="A"+"</span>. 완벽합니다."
+           }
+           else if(average>=80){
+            grade="B"+"</span>. 훌룽합니다."
+           }
+           else if(average>=70){
+            grade="C"+"</span>. 평범합니다."
+           }
+           else {
+            grade="D"+"</span>. 분발합시다."
+           }
+           return grade
+
+        }
+        // document.write(`당신의 평균 점수는 `+`<span style=color:crimson>`+Math.round(average)+`</span>`+` 점이며, 당신의 등급은 `+`<span style=color:crimson>`+getGrade(average)+`</span>`+` 입니다.`+a)
+        document.write(`당신의 평균 점수는 `+`<span style=color:crimson>`+Math.round(average)+`</span>`+` 점이며, 당신의 등급은 `+`<span style=color:crimson>`+getGrade(average))
+    </script>
+    </h1>
+</body>
+</html>

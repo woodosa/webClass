@@ -113,7 +113,7 @@ header:hover{
 
 
 .menubutton{
-    width: 40%;
+    width: 0%;
     position: fixed;
     height: 100%;
     display: none;
@@ -121,8 +121,55 @@ header:hover{
     top: 0;
     background: #294433;
     color: #D7C08E;
+    z-index: 801;
+    transition: all 0.5s ease 0s;
 }
-
+/* .menubutton::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 800;
+    transition: all 0.5s ease 0s;
+    
+} */
+.headL:hover>.menubutton{
+    display: block;
+    transition: all 0.5s ease 0s;
+    width: 40%;
+}
+.menutop img{
+    width: 270px;
+    height: 60px;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.menubottom{
+    width: 540px;
+    height: 600px;
+    margin: 150px auto;
+}
+.menubottom>ul>li {
+    margin-left: 60px;
+    font-size: 28px;
+    color: #D7C08E;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.menubottom>ul>li>ul>li{
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 18px;
+    color: #ddd;
+    font-weight: 200;
+}
+.menubottom>ul>li>ul>li:hover{
+    color: white;
+}
 
 
 
@@ -133,7 +180,7 @@ header:hover{
 .videobanner{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 1080px;
     top:0; 
     left: 0;
     z-index: 400; 
@@ -186,7 +233,7 @@ header:hover{
 .main_bespoke{
     margin-top: 1330px;
     position: relative;
-    height: 1500px;
+    height: 1600px;
 }
 .main_bespoke>div{
     position: relative;
@@ -227,6 +274,7 @@ header:hover{
 .main_bespoke>section{
     width: 1200px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .main_bespoke>div>h1>span{
@@ -474,11 +522,22 @@ header:hover{
 
 }
 .styleguide>section>ul>li img{
-    width: 100%;
+    width: 70%;
     height: 126px;
     object-fit: contain;
     margin-bottom: 20px;
+    transition: all 0.4s ease 0s;
 }
+.styleguide>section>ul>li:hover img{
+    transform: scale(1.35);
+}
+.styleguide>section>ul>li:hover p{
+    color: #D7C08E;
+    transition: all 0.4s ease 0s;
+    
+}
+
+
 .styleguide>section>ul>li::after{
     position: absolute;
     top: 25%;
@@ -661,6 +720,10 @@ header:hover{
     opacity: 1;
 }
 
+
+
+
+
 /*푸터*/
 
 
@@ -673,15 +736,94 @@ footer{
     
 }
 footer>img{
-    
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-660px,30px);
     width: 300px;
     height: 90px;
     object-fit: contain;
 
 }
 footer>section{
-        width: 1820px;
+        width: 1200px;
         margin: 0 auto;
         display: flex;
+        padding-top: 120px;
+        justify-content: space-between;
 
+}
+.FLlist{
+    width: 935.19px;
+}
+.FLlist span{
+    color: #D7C08E;
+}
+.FLlist>ul>li>a{
+    margin-left: 71px;
+    color: #999;
+}
+
+.FLlist>ul>li{
+    font-weight: 400;
+    color: #ddd;
+    margin-top: 22px;
+    
+}
+.FLlist>ul>li>ul{
+    margin-right: 307px;
+    display: flex;
+    float: right;
+}
+.FLlist>ul>li:last-of-type{
+    margin-right: 198px;
+}
+.FLlist>ul>li>ul>li{
+ margin-left: 8px;
+ color: #999;
+}
+.FLbottom{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #999;
+}
+.FLbottom>dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.FLbottom dd{
+    padding: 0 15px;
+}
+.FLbottom dt{
+    font-weight: 400;
+}
+.FLbottom p{
+    margin: 20px 0;
+}
+
+.FRinfo{
+    color: #999;
+}
+.frinfo1{
+    color: #ddd;
+    font-weight: 400;
+}
+.frinfo1+dl{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.frinfo1+dl+dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.sns>ul{
+    margin-top: 40px;
+    display: flex;
+}
+.sns>ul>li{
+    margin-right: 20px;
 }
