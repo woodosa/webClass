@@ -17,7 +17,7 @@ ol,ul{list-style:none;}
 html{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
@@ -33,7 +33,10 @@ h2{font-weight: 400;}
 
 
 
-
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 
 
@@ -112,16 +115,18 @@ header:hover{
 
 
 
-.menubutton{
-    width: 0%;
+.menubutton {
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
+    /* display: none; */
     height: 100%;
-    display: none;
+    width: 0;
     left: 0;
     top: 0;
     background: #294433;
     color: #D7C08E;
-    z-index: 801;
+    z-index: 1001;
     transition: all 0.5s ease 0s;
 }
 /* .menubutton::before{
@@ -136,9 +141,9 @@ header:hover{
     transition: all 0.5s ease 0s;
     
 } */
-.headL:hover>.menubutton{
-    display: block;
-    transition: all 0.5s ease 0s;
+.headL:hover>.menubutton {
+    opacity: 1;;
+    height: 100%;
     width: 40%;
 }
 .menutop img{
@@ -149,7 +154,7 @@ header:hover{
     margin-left: 30px;
 }
 .menubottom{
-    width: 540px;
+    width: 740px;
     height: 600px;
     margin: 150px auto;
 }
@@ -169,8 +174,32 @@ header:hover{
 }
 .menubottom>ul>li>ul>li:hover{
     color: white;
+    
 }
-
+.menubottom>ul>li>ul>li:hover::before{
+    opacity: 1;
+    transition: all 0.7s ease 0s;
+}
+.menubottom>ul>li>ul>li::before{
+    position: absolute ;
+    left: 50%;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border:0.5px solid #D7C08E;
+     transform: translate( -270px,115%) rotate(45deg); 
+    opacity: 0;
+    
+}
+.menubottom::before{
+    content: "";
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    right: 0;
+    top: 0;
+}
 
 
 
@@ -327,6 +356,13 @@ header:hover{
 
 
 
+
+
+
+
+
+
+
 /* 메인_헤리티지리갈 페이지*/
 
 .heritage{
@@ -360,7 +396,7 @@ header:hover{
     width: 1200px;
     margin: 0 auto;
 }
-.heritage>section>article>h1{
+.heritage>h1{
     position: absolute;
     top: 75px;
     left: 50%;
@@ -375,6 +411,7 @@ header:hover{
 }
 .heritage>section>article{
     width: 518px;
+    position: relative;
 }
 .heritage>section>article>p{
     color: #ddd;
@@ -388,6 +425,7 @@ header:hover{
 
 .heritage>section>article>p>span{
     color: #D7C08E;
+    margin-right: 20px;
 }
 
 
@@ -396,10 +434,45 @@ header:hover{
     display: flex;
     justify-content: flex-end;
 }
+
+.heritage>section>article>img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25px,145px);
+}
+.heritage>section>article img:hover+.gwtext{
+    display: block;
+}
+
 .gwtext{
+    position: absolute;
+    left: 50%;
+    transform: translateY(150px);
+    top: 50%;
     display: none;
+    border: #D7C08E 1px solid;
+    background: #294433;
+    color: #ddd;
+    font-size: 15px;
+    padding: 20px;
+    width: 750px;
+
     
 }
+.gwtext span{
+    color: #D7C08E;
+}
+
+
+
+
+
+
+
 /* .heritage>section>article>a>img{
     width: 35px;
     height: 25px;
@@ -733,15 +806,16 @@ footer{
     position: relative;
     background: #294433;
     width: 100%;
+    font-size: 15px;
     
 }
 footer>img{
     position: absolute;
     left: 50%;
     top: 0%;
-    transform: translate(-660px,30px);
-    width: 300px;
-    height: 90px;
+    transform: translate(-630px,30px);
+    width: 200px;
+    height: 60px;
     object-fit: contain;
 
 }
@@ -760,7 +834,7 @@ footer>section{
     color: #D7C08E;
 }
 .FLlist>ul>li>a{
-    margin-left: 71px;
+    margin-left: 47px;
     color: #999;
 }
 
@@ -771,12 +845,12 @@ footer>section{
     
 }
 .FLlist>ul>li>ul{
-    margin-right: 307px;
-    display: flex;
+    margin-right: 421px;
+    display: inline-flex;
     float: right;
 }
 .FLlist>ul>li:last-of-type{
-    margin-right: 198px;
+    margin-right: 165px;
 }
 .FLlist>ul>li>ul>li{
  margin-left: 8px;
@@ -826,4 +900,53 @@ footer>section{
 }
 .sns>ul>li{
     margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 비스포크페이지 */
+
+
+
+
+.bespoke{
+    position: relative;
+    margin-top: 1180px;
+    height: 970px;
+}
+.bespoke>h1{
+    font-size:120px ;
+    color: #294433;
+}
+.bespoke>h1>span{
+    margin-left: 160px;
+}
+.bespoke>img{
+    
+    width: 687px;
+    height: 687px;
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+.bespoke>h2{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 108px;
+    margin-bottom: 40px;
+}
+.bespoke>p{
+    margin-top: 15px;
 }
