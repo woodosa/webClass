@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/bmi.js">
+
+    </script>
+    <style>
+        table{
+            border-collapse:collapse ;
+            
+        }
+        .bmistyle{
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 2rem;
+
+
+        }
+        caption{
+            font-size: 4rem;
+            color: crimson;
+            font-weight: 700;
+        }
+        .bmistyle th{
+            font-weight: bold;
+            border: 3px solid crimson;
+            border-left:none ;
+            padding: 10px 0;
+        }
+        .bmistyle td{
+            text-align: center;
+            border: 3px solid crimson;
+            border-right:none ;
+            padding: 10px 0;
+        }
+        .bmistyle tr:last-of-type{
+            background: crimson;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <script>
+        // let name = prompt(`이름을 입력해주세요`)
+        // let height=Number(prompt(`신장을 입력해주세요`));
+        // let weight=Number(prompt(`체중을 입력해주세요`));
+        // let bmi= Number(weight/(Math.pow((height/100),2)));
+        // let bmiresult; //= bmi>=25?`비만입니다`:bmi>=23 && bmi<=24.9?"과체중입니다":bmi>=18.5 && bmi<=22.9?`정상입니다`: `저체중입니다`
+
+
+        // alert(bmi)
+        // if(bmi>=25){(bmiresult = `비만입니다`)}
+        // else if(bmi>=23 && bmi<=24.9){(bmiresult = `과체중입니다`)}
+        // else if(bmi>=18.5 && bmi<=22.9){(bmiresult = `정상체중입니다`)}
+        // else{bmiresult = `저체중입니다.`}
+
+        
+        
+
+    //  document.write(
+    //     `당신의 키는 ${height}cm이고 몸무게는 ${weight}입니다. bmi수치는 ${//Math.round(
+    //         bmi}이며 ${bmiresult}`
+    //     //  if(bmi>=25){(`비만입니다`)}
+    //     //  else if(bmi>=23 && bmi<=24.9){(`과체중입니다`)}
+    //     //  else if(bmi>=18.5 && bmi<=22.9){(`정상체중입니다`)}
+    //     //  else{`저체중입니다.`}
+    //      )
+    // document.write(`<table class="bmistyle">
+    //     <caption>${name}님의 비만도 검사결과</caption>
+    //     <tr>
+    //         <th>신장</th>
+    //         <td>${height}cm</td>
+    //     </tr>
+    //     <tr>
+    //         <th>체중</th>
+    //         <td>${weight}kg</td>
+    //     </tr>
+    //     <tr>
+    //         <th>bmi</th>
+    //         <td>${Math.round(
+    //         bmi)}</td>
+    //     </tr>
+    //     <tr>
+    //         <th>결과</th>
+    //         <td>${bmiresult}</td>
+    //     </tr>
+    // </table>`)
+        
+        showresult("우용하",186,86,getBMI(180,86),getBMI_result(getBMI(180,86)))
+        showresult("a",170,20,getBMI(170,20),getBMI_result(getBMI(170,20)))
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/bmi.js"></script>
+    <style>
+        table{
+            border-collapse:collapse ;
+            
+        }
+        .bmistyle{
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 2rem;
+
+
+        }
+        caption{
+            font-size: 4rem;
+            color: crimson;
+            font-weight: 700;
+        }
+        .bmistyle th{
+            font-weight: bold;
+            border: 3px solid crimson;
+            border-left:none ;
+            padding: 10px 0;
+        }
+        .bmistyle td{
+            text-align: center;
+            border: 3px solid crimson;
+            border-right:none ;
+            padding: 10px 0;
+        }
+        .bmistyle tr:last-of-type{
+            background: crimson;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <script>
+        showresult("정민구",182,76,getBMI(182,76),getBMI_result(getBMI(182,76)))
+    </script>
+</body>
+</html>

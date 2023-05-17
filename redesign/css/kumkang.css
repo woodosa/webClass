@@ -918,7 +918,9 @@ footer>section{
 /* 비스포크페이지 */
 
 
-
+#bespoke_video{
+    filter: brightness(1);
+}
 
 .bespoke{
     position: relative;
@@ -950,3 +952,112 @@ footer>section{
 .bespoke>p{
     margin-top: 15px;
 }
+
+
+
+
+
+
+/*비스포크 메이크*/
+
+
+.make{
+    width: 100%;
+    height: 3228px;
+    background: #294433;
+    color: rgb(192, 191, 191);
+    position: relative;
+    
+}
+.make>img{
+    width: 1893px;
+    height: 3139px;
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 1.5%);
+}
+.make>section{
+    padding-top: 227px;
+}
+.make>section>h1{
+    font-size: 120px;
+    color: #D7C08E;
+    text-align: center;
+}
+.make>section>ul>li>div{
+    
+    height: 410px;
+
+    position: absolute;
+    left: 50%;
+
+}
+
+.make>section>ul>li>div>*{
+    padding-left: 122px;
+}  
+
+.make>section>ul>li:nth-last-of-type(1){
+    flex-direction: row-reverse;
+}
+.make>section>ul>li:nth-last-of-type(1)>div{
+    width: 542px;
+    transform: translateX(-100%);
+}
+.make>section>ul>li:nth-last-of-type(1)>div>h2{
+    font-size: 120px;
+    white-space: nowrap;
+}
+.make>section>ul>li:nth-last-of-type(1)>div>*{
+    padding-left: 0;
+}
+
+
+.make>section>ul>li:nth-last-of-type(3){
+    flex-direction: row-reverse;
+}
+.make>section>ul>li:nth-last-of-type(3)>div{
+    width: 542px;
+    transform: translateX(-100%);
+}
+.make>section>ul>li:nth-last-of-type(3)>div>h2{
+    text-align: left;
+}
+.make>section>ul>li:nth-last-of-type(3)>div>*{
+    padding-left: 0;
+}
+
+
+
+
+.make>section>ul>li{
+    display: flex;
+    
+    margin-top: 200px;
+}
+.make>section>ul>li>img{
+    width: 650px;
+    height: 406px;
+    object-fit: contain;
+}
+
+.make>section>ul>li>div>h2{
+    border-bottom:0.75px solid #D7C08E ;
+    font-size: 90px;
+    padding-bottom: 10px;
+    font-family: "century";
+    color: #D7C08E;
+    
+}
+.make>section>ul>li>div>h3{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color:white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+
