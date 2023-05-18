@@ -1034,7 +1034,7 @@ footer>section{
 
 .make>section>ul>li{
     display: flex;
-    
+
     margin-top: 200px;
 }
 .make>section>ul>li>img{
@@ -1042,6 +1042,14 @@ footer>section{
     height: 406px;
     object-fit: contain;
 }
+/* .make>section>ul>li>img::after{
+    content: "";
+    border: 1px solid #D7C08E;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
 
 .make>section>ul>li>div>h2{
     border-bottom:0.75px solid #D7C08E ;
@@ -1061,3 +1069,188 @@ footer>section{
 
 
 
+
+
+
+/*비스포크 혜택*/
+
+
+.spbene{
+    background: url(../source/img/bespoke/SVG/SVG/Asset\ 1.svg) no-repeat;
+    width: 100%;
+    height: 970px;
+    padding-top: 250px;
+}
+.spbene>section>h1{
+    text-align: center;
+    font-size: 120px;
+    color: #294433;
+}
+.spbene>section>h2{
+    text-align: center;
+    padding-left: 480px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.spbene>section>ul{
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.spbene>section>ul>li>p{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 300;
+}
+.spbene>section span{
+    color: #777;
+    font-size: 18px;
+}
+.spbene>section>ul>li>img{
+    filter: grayscale(0.2) brightness(0.85)
+}
+
+/*비스포크 상담*/
+
+
+.aftservice{
+margin-top: 170px;
+position: relative;
+}
+
+
+.aftservice img{
+    filter: brightness(0.7);
+}
+
+.aftservice>h1{
+    text-align: center;
+    font-size: 120px;
+    color: #D7C08E;
+}
+.aftservice_top{
+    display: flex;
+    margin-top: 105px;
+    align-items: center;
+}
+.aftservice_top h3{
+    font-size: 40px;
+    color: #294433;
+    font-weight: 400;
+}
+.aftservice_top>section{
+    margin-left: 60px;
+}
+.aftservice_top>section>dl>dt+dd{
+    font-size: 20px;
+    color: #999;
+}
+.aftservice_top p{
+    font-size: 22px;
+    margin-top: 30px;
+}
+.aftservice_top span{
+    font-family: "century";
+    font-size: 28px;
+}
+
+.aftservice::before{
+    width: 790px;
+    content: "";
+    border: 0.75px solid #D7C08E;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55px);
+    
+}
+
+
+
+
+.aftservice_bottom{
+    margin-top: 70px;
+    margin-bottom: 170px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.aftservice_bottom>section>dl>dt{
+    font-size: 40px;
+    color: #294433;
+    font-weight: 400;
+}
+.aftservice_bottom>section>dl>dt+dd{
+    font-size: 20px;
+    color: #999;
+}
+.aftservice_bottom>section>dl>dt+dd+dd{
+    font-family: "century";
+    font-size: 28px;
+    margin: 30px 0;
+}
+.aftservice_bottom>section>h4{
+    color: black;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.aftservice_bottom>section>ul>li{
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.aftservice_bottom>section>ul>li:hover{
+    color: #294433;
+    transition: all 0.5s ease 0s;
+}
+
+
+.aftservice_bottom>section>ul>li::after{
+    position: absolute ;
+    left: 50%;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border:0.5px solid #D7C08E;
+     transform: translate( -210px,115%) rotate(45deg); 
+    opacity: 0;
+}
+
+.aftservice_bottom>section>ul>li:hover::after{
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+
+/*헤리티지 리갈 페이지*/
+
+
+
+
+.Hregal_VB>h1{
+    color: white;
+    font-size: 180px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-90%,-50%);
+    left: 50%;
+}
+.Hregal_VB>h2{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-180%,250px);
+    left: 50%;
+}
