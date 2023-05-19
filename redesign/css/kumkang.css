@@ -4,6 +4,11 @@ address,em,i{font-style: normal;}
 strong,b{font-weight: normal;}
 a{text-decoration: none;color: inherit;}
 ol,ul{list-style:none;}
+datalist{
+    a
+}
+
+
 
 @font-face {
     font-family: "century";
@@ -1243,14 +1248,165 @@ position: relative;
     font-size: 180px;
     position: absolute;
     top: 50%;
-    transform: translate(-90%,-50%);
+    transform: translate(-90%,-70%);
     left: 50%;
 }
 .Hregal_VB>h2{
     color: white;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 300;
     position: absolute;
     top: 50%;
-    transform: translate(-180%,250px);
+    transform: translate(-200%,200px);
     left: 50%;
+}
+
+
+.Hregal_styleguide{
+    padding-top: 1180px;
+    position: relative;
+    height: 1080px;
+}
+.Hregal_styleguide>h1{
+    text-align: center;
+    font-size: 120px;
+    color: #294433;
+}
+
+ /* .Hregal_styleguide>h1::before{
+    content: "";
+    border-top: 0.75px solid #294433;
+    width: 170px;
+    height: 0.75px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom:19%;
+}
+.Hregal_styleguide>h2::after{
+    content: "";
+    border-top: 0.75px solid #294433;
+    width: 170px;
+    height: 0.75px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 90%;
+}  */
+/* .Hregal_styleguide>h2{
+    text-align: center;
+} */
+
+
+.Hregal_styleguide>ul{
+    display: flex;
+    margin-top: 200px;
+}
+.Hregal_styleguide>ul>li{
+    flex: 1;
+    text-align: center;
+}
+.Hregal_styleguide>ul>li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.Hregal_styleguide>ul>li>a>h3{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Hregal_styleguide>ul>li>a>p{
+    color: #666
+}
+
+
+
+/*헤리갈 상품페이지*/
+.Hregal_list{
+    position: relative;
+}
+
+.Hregal_listhead>h1{
+    height: 192px;
+    text-align: center;
+    font-size: 90px;
+    z-index: 500;
+    color: #294433;
+    background: url(../source/img/icon/SVG/SVG/Asset\ 1.svg)no-repeat 50% 50%;
+    background-size: contain;
+    margin-bottom: 70px;
+    
+}
+.Hregal_listhead>ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Hregal_listhead>ul>li img{
+    width: 42px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align:bottom;
+}
+.Hregal_listhead>ul>li:nth-of-type(2){
+    margin-right: 500px;
+    font:30px "century";
+    color: #294433;
+}
+.Hregal_listhead>ul>li:nth-of-type(2)::after{
+    position: absolute ;
+    left: 50%;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border:0.75px solid #294433;
+     transform: translate( -430px, 12px) rotate(45deg); 
+}
+
+.Hregal_listhead>ul>li:last-of-type{
+    display: flex;
+    
+}
+.Hregal_mainlist{
+    margin-top: 10px;
+    border-top: 0.75px solid #294433 ;
+    padding-top: 70px;
+}
+
+
+.Hregal_mainlist>section>ul{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.Hregal_mainlist>section>ul>li{
+    height: 543px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Hregal_mainlist>section>ul>li img{
+    width: 280px;
+    height: 280px;
+}
+.Hregal_mainlist>section>ul>li>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+    width: 380px;
+    height: 380px;
+}
+.Hregal_mainlist>section>ul>li>div:hover>img{
+    transform: scale(1.3);
+    transition: all 0.6s ease 0s;
+}
+.Hregal_mainlist>section>ul>li>div:hover{
+    background: #294433;
+    transition: all 0.6s ease 0s;
 }
