@@ -6,7 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/study5.js"></script>
     <title>이벤트</title>
-    
+    <style>
+        .btnPopup{
+            position: fixed;
+            border: 1px solid crimson;
+            right: 10px;
+            top: 10px;
+            padding: 4px 20px;
+            cursor: pointer;
+        }
+        .btnClose{
+            border: 1px solid white;
+            background: white;
+            color: blue;
+            width: 80px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            cursor: pointer;
+            /* position: fixed;
+            border: 1px solid crimson;
+            right: 10px;
+            top: 10px;
+            padding: 4px 20px;
+            cursor: pointer; */
+        }
+
+        .hiddenPopup{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,255,0.9);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 200px;
+            box-sizing: border-box;
+            transition: all 1s ease 0s;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 100;
+            transform: translateX(-100%);
+        }
+        .hiddenPopup.show{
+            display: flex;  
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0%);
+        }
+    </style>
 </head>
 <body>
     <h1>이벤트</h1>
@@ -22,5 +76,16 @@
     <button class="btnClick">
         레드버튼
     </button>
+
+
+    <div class="hiddenPopup">
+        <h1>title</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore maxime iure, unde itaque delectus facilis exercitationem quod porro impedit officia dignissimos laboriosam deserunt vero illum perferendis expedita, commodi rerum a?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolores, placeat voluptatem deleniti nemo facilis reiciendis qui? Corrupti at est, earum accusamus reiciendis sequi corporis harum nulla iusto similique nihil.
+        </p>
+        <span class="btnClose">닫기</span>
+    </div>
+    <span class="btnPopup">메뉴버튼</span>
 </body>
 </html>

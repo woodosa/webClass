@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/study6.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        a{text-decoration: inherit;color: inherit;}
+        ul{
+            list-style: none;
+        }
+
+        .btnMenu{
+            position: fixed;
+            border: 3px solid black;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 100;
+           
+        }
+
+        .btnMenu.close>span:nth-of-type(2){
+            opacity: 0;
+        }
+        .btnMenu.close>span:nth-of-type(1){
+            transform: translateX(3.5px) rotate(50deg);
+        }
+        .btnMenu.close>span:nth-of-type(3){
+            transform: translateX(3.5px) rotate(-50deg);
+            
+        }
+        .btnMenu>span{
+            width: 20px;
+            height: 1px;
+            background: black;
+            display: block;
+            margin: 6.7px auto;
+            transition:  all 0.7s ease 0s;
+            transform-origin: 0% center;
+        }
+
+
+        nav{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: fixed;
+            /* background: crimson;
+            color: crimson; */
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.show{
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        nav.show ul.gnb>li{
+            
+            background: crimson;
+            color: white;
+            flex: 1;
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        ul.gnb>li:nth-of-type(1){
+            transition: all 0.7s ease 0s;
+        }
+        ul.gnb>li:nth-of-type(2){
+            transition: all 0.7s ease 0.2s;
+        }
+        ul.gnb>li:nth-of-type(3){
+            transition: all 0.7s ease 0.4s;
+        }
+        ul.gnb>li:nth-of-type(4){
+            transition: all 0.7s ease 0.6s;
+        }
+
+
+        .gnb{
+
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .gnb>li a{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gnb>li{
+            border-right: 1px solid white;
+            flex: 1;
+            opacity: 0;
+            transform: translateX(-40px);
+        }
+        .gnb>li:last-of-type{
+            border-right: none;
+        }
+    /* nav.show>.gnb>li:hover{
+            background:white ;
+            color: crimson;
+    } */
+      
+        
+    </style>
+</head>
+<body>
+    <div class="btnMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <nav>
+        <ul class="gnb">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

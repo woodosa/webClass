@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/study7.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        .tabMenu{
+
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            margin-top: 50px;
+            
+        }
+        dt{
+            height: 40px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(105, 152, 240, 0.327);
+            color: rgba(0, 0, 0, 0.327);
+            cursor: pointer;
+            transition: all 0.7s ease 0s;
+        }
+        dd{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 2s ease 0s;
+            transform: translateX(-50%);
+        }
+        .tabMenu>dt.on{
+            /* opacity: 1;
+            pointer-events: auto; */
+            background: rgb(49, 49, 113);
+            color: white;
+            
+        }
+        .tabMenu>dt.on+dd{
+             opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <dl class="tabMenu">
+        <dt>tab1</dt>
+        <dd>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, veritatis illum molestiae nam quo odit modi consequuntur doloremque. Perferendis voluptates unde neque quidem adipisci quisquam, eligendi qui pariatur laborum excepturi!
+            </p>
+        </dd>
+        <dt>tab2</dt>
+        <dd>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nobis officia autem distinctio dicta nihil error sapiente asperiores suscipit? Dignissimos, nostrum aliquam consectetur corporis earum atque quae corrupti accusantium rem.
+            </p>
+        </dd>
+        <dt>tab3</dt>
+        <dd>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, libero minus facilis accusantium veritatis sequi adipisci consequatur et aliquam, rem optio autem dolores fugiat odit nostrum, laborum consectetur blanditiis non!
+            </p>
+        </dd>
+
+    </dl>
+
+</body>
+</html>
