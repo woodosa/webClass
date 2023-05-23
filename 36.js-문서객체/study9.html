@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/study9.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,ol{
+            list-style: none;
+        }
+        .station{
+
+            margin: 0 auto;
+            width: 100%;
+            height: 720px;
+            overflow: hidden;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        img{
+            max-width: 100%;
+            /*너비의 최대값을 지정하는 css*/
+        }
+
+        .train>li img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* filter: brightness(0.7); */
+        }
+        .train>li::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg,rgb(0, 0, 0),rgba(0, 0, 0, 0));
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .train{
+            display: flex;
+            width: 400%;
+            height: 100%;
+            transition: all 1s ease 0s;
+            /* transform: translateX(-500px); */
+        }
+        .train>li{
+            position: relative;
+            flex: 1;
+        }
+        .controler{
+            border: 1px solid black;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .train>li>div{
+            position: absolute;
+            top:100%;
+            left:0;
+            z-index: 2;
+            color: white;
+            font-size: 28px;
+            width: 60%;
+            opacity: 0;
+            transition:all,0.5s,ease,1s;
+            pointer-events: none;
+        }
+        .train>li.on>div{
+            top: 60%;
+            left:5%;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        /* .train>.on{
+            transform: translateX(500px);
+        } */
+    </style>
+</head>
+<body>
+    <div class="station">
+        <ul class="train">
+            <li class="on"><img src="./img/2/img1.jpg" alt="1">
+                <div>
+                    <h1>title1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quo tempore, reiciendis, deleniti nesciunt dicta voluptates magni sunt voluptatum accusantium ullam. Consequuntur distinctio quisquam delectus, dicta reiciendis sint atque? Accusantium.</p>
+                </div>
+            </li>
+            <li><img src="./img/2/img2.jpg" alt="2">
+                <div>
+                    <h1>title2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quo tempore, reiciendis, deleniti nesciunt dicta voluptates magni sunt voluptatum accusantium ullam. Consequuntur distinctio quisquam delectus, dicta reiciendis sint atque? Accusantium.</p>
+                </div>
+            </li>
+            <li><img src="./img/2/img3.jpg" alt="3">
+                <div>
+                    <h1>title3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quo tempore, reiciendis, deleniti nesciunt dicta voluptates magni sunt voluptatum accusantium ullam. Consequuntur distinctio quisquam delectus, dicta reiciendis sint atque? Accusantium.</p>
+                </div>
+            </li>
+            <li><img src="./img/2/img4.jpg" alt="4">
+                <div>
+                    <h1>title4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, quo tempore, reiciendis, deleniti nesciunt dicta voluptates magni sunt voluptatum accusantium ullam. Consequuntur distinctio quisquam delectus, dicta reiciendis sint atque? Accusantium.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="controler">
+        <a class="btnPrev" href="#">prev</a>
+        <a class="btnNext" href="#">next</a>
+    </div>
+</body>
+</html>

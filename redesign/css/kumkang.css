@@ -372,7 +372,9 @@ header:hover{
 
 
 /* 메인_헤리티지리갈 페이지*/
-
+main{
+    padding-bottom: 300px;
+}
 .heritage{
     background: #294433;
     color: #D7C08E;
