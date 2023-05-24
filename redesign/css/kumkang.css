@@ -1528,3 +1528,72 @@ position: relative;
     margin-right:10px ;
 
 }
+
+
+
+
+
+
+/*otherbrand*/
+
+
+
+
+.OB_mainBanner{
+    width: 1920px;
+    position: relative;
+    
+}
+.OB_mainBanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .OB_mainBanner>ul::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.275),rgba(255, 255, 255, 0));
+} */
+
+
+
+
+
+/*스타일카테고리*/
+
+
+.OB_StyleC>h2{
+    margin-top: 90px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.OB_StyleC>ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.OB_StyleC>ul>li{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OB_StyleC>ul>li>a>img{
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */  
+}
+.OB_StyleC>ul>li:nth-of-type(5)>a>img{
+    width:100px;
+    height:70px;
+}
