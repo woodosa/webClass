@@ -1565,11 +1565,22 @@ position: relative;
 
 /*스타일카테고리*/
 
-
-.OB_StyleC>h2{
-    margin-top: 90px;
+.Other_Brand h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 28px;
     font-weight: 400;
+}
+.Other_Brand h2 span{
+    color: #999;
+    font-size: 18px;
+}
+.OB_StyleC{
+    margin-bottom: 150px;
+}
+.OB_StyleC>h2{
+    margin-top: 90px ;
 }
 .OB_StyleC>ul{
     display: flex;
@@ -1577,6 +1588,12 @@ position: relative;
     margin-top: 55px;
 }
 .OB_StyleC>ul>li{
+    text-align: center;
+    font-weight: 400;
+
+}
+.OB_StyleC>ul>li>a{
+    margin-bottom: 10px;
     width: 175px;
     height: 175px;
     border-radius: 50%;
@@ -1596,4 +1613,84 @@ position: relative;
 .OB_StyleC>ul>li:nth-of-type(5)>a>img{
     width:100px;
     height:70px;
+}
+
+
+
+
+/*상품리스트*/
+
+.GoodsList{
+    margin-top: 55px;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.GoodsList>li{
+    width: 25%;
+    margin-right: 30px;
+}
+.GoodsList>li img{
+    width: 278px;
+    height: 278px;
+    object-fit: contain;
+}
+.GoodsList>li>a>div{
+    position: relative;
+}
+.GoodsList>li>a>div::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 166, 0, 0.33);
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+
+}
+.GoodsList>li:hover>a>div::before{
+    background: orange;
+}
+.GoodsList>li:hover .OB_HotlistTxt{
+    background: orange;
+}
+
+.OB_HotlistTxt{
+    padding: 10px;
+    transition: all 0.5s ease 0s;
+    background: rgba(221, 221, 221, 0.203);
+
+}
+.OB_HotlistTxt h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+.OB_HotlistTxt h4{
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+
+
+.OB_HLTxtPrice{
+    margin-top: 30px;
+    font-weight: 400;
+    display: flex;
+}
+.OB_HLTxtPrice>span:nth-of-type(1){
+    width: 50%;
+    /* border: 1px solid red; */
+    color: #ddd;
+    text-decoration:line-through;
+}
+.OB_HLTxtPrice>span:nth-of-type(1)+span{
+    color: orange;
+    margin-right: 12px;
+}
+
+.GoodsList dl{
+    display: flex;
 }
