@@ -1601,6 +1601,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease 0s;
 }
 .OB_StyleC>ul>li>a>img{
     height: 50px;
@@ -1610,10 +1611,19 @@ position: relative;
     justify-content: center;
     align-items: center;  */  
 }
-.OB_StyleC>ul>li:nth-of-type(5)>a>img{
+.OB_StyleC>ul>li:nth-of-type(6)>a>img{
     width:100px;
-    height:70px;
+    height:60px;
 }
+.OB_StyleC>ul>li:hover img{
+    transform: scale(1.2);
+    transition: all 0.5s ease 0s;
+    color: #294433;
+}
+.OB_StyleC>ul>li:hover a{
+    background: #D7C08E;
+}
+
 
 
 
@@ -1630,6 +1640,7 @@ position: relative;
 .GoodsList>li{
     width: 25%;
     margin-right: 30px;
+    /* box-shadow: 3px #ddd; */
 }
 .GoodsList>li img{
     width: 278px;
@@ -1644,23 +1655,32 @@ position: relative;
     position: absolute;
     width: 40px;
     height: 40px;
-    background: rgba(255, 166, 0, 0.33);
+    background: #29443338;
     left: 0;
     top: 0;
     transition: all 0.5s ease 0s;
 
 }
 .GoodsList>li:hover>a>div::before{
-    background: orange;
+    background: #294433;
 }
 .GoodsList>li:hover .OB_HotlistTxt{
-    background: orange;
+    background: #294433;
+    color: #ddd;
+}
+.GoodsList>li:hover .OB_HotlistTxt h3{
+    
+    color: #D7C08E;
+}
+.GoodsList>li:hover .OB_HotlistTxt .OB_HLTxtPrice>span:nth-of-type(1){
+    color: #999;
 }
 
 .OB_HotlistTxt{
     padding: 10px;
     transition: all 0.5s ease 0s;
-    background: rgba(221, 221, 221, 0.203);
+    /* background: rgba(237, 237, 237, 0.329); */
+    background: rgba(237, 237, 237, 0.329);
 
 }
 .OB_HotlistTxt h3{
@@ -1681,7 +1701,7 @@ position: relative;
     display: flex;
 }
 .OB_HLTxtPrice>span:nth-of-type(1){
-    width: 50%;
+    width: 45%;
     /* border: 1px solid red; */
     color: #ddd;
     text-decoration:line-through;
@@ -1694,3 +1714,113 @@ position: relative;
 .GoodsList dl{
     display: flex;
 }
+
+
+
+
+
+
+
+/*OB_HotbrandList*/
+
+
+
+
+
+
+
+.OB_HotBrand{
+    margin-top: 150px;
+}
+.OB_HotbrandList{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.OB_HotbrandList>li{
+    margin-top: 55px;
+    width: 20%;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+    font-weight: 400;
+}
+.OB_HotbrandList>li:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+.OB_HotbrandList>li:hover{
+    color: #D7C08E
+}
+.OB_HotbrandList>li img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 30px;
+    filter: grayscale(0.6);
+}
+
+
+
+/*OB_이너배너*/
+
+
+.OB_InnerBanner img{
+    margin-top: 150px;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+
+
+/*OB_핫키워드*/
+
+
+.OB_HotKeyword{
+    margin-top: 150px;
+    margin-bottom: 1150px;
+}
+
+.OB_HotKeyIN{
+    position: relative;
+}
+.OB_inHotKeyword{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.OB_HotKeyIN>dt{
+    margin-right: 30px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.OB_HotKeyIN dd{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    pointer-events: none;
+    
+}
+.OB_HotKeyIN>dt.on+dd{
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+.OB_HotKeyIN>dt.on+dd>.GoodsList{
+    width: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.OB_HotKeyIN>dt.on+dd>.GoodsList>li{
+    width: 275px;
+}
+/* .OB_HotKeyIN dt+dd+dd{
+    display: none;
+} */

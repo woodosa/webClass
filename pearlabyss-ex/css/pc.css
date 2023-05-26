@@ -4,6 +4,12 @@
     .Mo_ver{
         display: none;
     }
+    .mo{
+        display: none;
+    }
+    .moMenu{
+        display: none;
+    }
     header{
         position:fixed;
         left:0;top:0;

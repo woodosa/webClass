@@ -4,8 +4,117 @@
     .Pc_ver{
         display: none;
     }
+    .moMenu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1100;
+        pointer-events: none;
+    }
+    .moMenu.show{
+        pointer-events: auto;
+    }
+    .logoMo{
+        /* width: 31.47vw; */
+        width: 174px;
+        max-width: 230px;
+        margin: 0 auto;
+        margin-top: 22px;
+        margin-bottom: 42px;
+    }
+    .logoMo img{
+        width: 100%;
+
+    }
+    .moGnb{
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 75vw;
+        height: 100%;
+        max-width: 310px;
+        min-width: 290px;
+        /* overflow: auto; */
+        transition: all 0.5s ease 0.1s;
+        transform: translateX(-100%);
+    }
+    .show.moMenu>.moGnb{
+        transform: translateX(0%);
+    }
+    .blackcover{
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease 0s;
+        pointer-events: none;
+    }
+    .moMenu.show .blackcover{
+        opacity: 0.8;
+        pointer-events: auto;
+    }
+    .mobileMenuList ul{
+        /* display: none; */
+
+        margin-top: 14px ;
+        padding-left: 10px;
+    }
+    .mobileMenuList ul>li{
+        color: #9a9a9a;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    .mobileMenuList ul>li:last-of-type{
+        margin-bottom: 0;
+    }
+    .mobileMenuList{
+        height: calc(100% - 130px);
+        overflow: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mobileMenuList>li{
+        border-bottom: 1px solid #ccc;
+        /* padding: 12px ; */
+        font-size: 1.2rem ;
+        font-weight: bold;
+        position: relative;
+    }
+    .mobileMenuList>li>a{
+        border-bottom: 1px solid #ccc;
+        display: block;
+        padding: 12px;
+    }
+    .mobileMenuList>li:after{
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #666;
+        border-top: none;
+        border-right: none;
+        right: 10px;
+        top: 14px;
+        transform: rotate(-45deg);
+    }
+
+
+
+
+
+
+
+
+
+
+
     header.Mo_ver{
-        border: 1px solid red;
         position: fixed;
         left: 0;
         top: 0;
@@ -15,20 +124,37 @@
     }
     .innerheader{
         width: 88%;
+        height: 100%;
         margin: 0 auto; 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top:10px ;
     }
     .btnMoMenu{
-        border: 1px solid red;
-        width: 6.4vw;
-        height: 6.4vh;
+             width:2rem;
+            height:2.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+
+    }
+    .btnMoMenu span{
+        /* width: 30px;
+        height: 2px;
+        background: white;
+        font-size: 0;
+        margin-top: 7px; */
+        width:100%;
+        height:4px;
+        background:#fff;
+        display:block;
+        margin:4px 0;
 
     }
     .btnMenuLang{
         width: 6.4vw;
-        height: 6.4vh;
     }
     .btnMenuLang img{
         object-fit: contain;
@@ -52,7 +178,7 @@
     /* main */
     main{position:relative;}
     .videoBanner{
-        height:780px;
+        height:60vh;
         position:relative;
     }
     .videoBanner:after{
@@ -76,12 +202,18 @@
         transform:translate(-50%,-50%);
         z-index: 10;
         text-align: center;
+        width: 60vw;
     }
     .flotingTxt>h2{
-        margin-bottom:50px;
+        /* margin-bottom:50px; */
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .flotingTxt>h2>img{
+        width: 100%;
     }
     .flotingTxt>a{
-        padding:30px 110px;
+        padding:3vw 13vw;
         background:rgba(255, 255, 255, 0.391);
         display:inline-block;
         color:#fff;
@@ -91,7 +223,7 @@
     
     /* news */
     .news{
-        width:1440px;
+        width:90%;
         margin:0 auto;
         margin-top:60px;
         margin-bottom:100px;
@@ -101,22 +233,29 @@
         font-weight: bold;
         margin-bottom:26px;
     }
-    .news>ul{
+    .news ul{
         display:flex;
     }
-    .news>ul>li{
-        border-right:1px solid #ebebeb;
-        flex:1;
-        padding:0 30px;
+
+    .news .swiper-pagination{
+        position: relative;
+            
+        margin-top: 50px;
     }
-    .news>ul>li:first-of-type{
+
+    
+
+    .news .swiper-pagination-bullet-active{
+        background: black;
+    }
+    .news ul>li:first-of-type{
         padding-left:0;
     }
-    .news>ul>li:last-of-type{
+    .news ul>li:last-of-type{
         padding-right:0;
         border-right:none;
     }
-    .news>ul>li h4{
+    .news ul>li h4{
         font-size:15px;
         font-weight: bold;
         margin-bottom:16px;
