@@ -1537,15 +1537,31 @@ position: relative;
 /*otherbrand*/
 
 
+.OB_mainBanner{
+    width: 100%;
+    height: 794px;
 
+}
+.OB_mainBanner.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .OB_videoBanner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
-.swiper{
-    width: 1920px;
+/* .OB_mainBanner.swiper{
+    width: 100%;
+    height: 794px;
+    border: 1px solid red;
     
     
 }   
-/* .OB_mainBanner img{
-    width: 100%;
+.OB_mainBanner.swiper img{
+    width: 100vw;
     height: 100%;
     object-fit: cover;
 } */
@@ -1582,15 +1598,49 @@ position: relative;
 }
 
 .Other_Brand h2{
+    /* padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 28px;
     font-weight: 600;
+    justify-content: space-between;
+ 
 }
-.Other_Brand h2 span{
+
+/* .Other_Brand h2::before{
+    content: "";
+    width: 55px;
+    height: 55px;
+    background: #294433;
+    border-radius: 50%;
+    position: absolute;
+} */
+.Other_Brand h2 a span{
     color: #999;
     font-size: 18px;
+    padding-right: 20px;
+}
+.Other_Brand span{
+    display: flex;
+    align-items: center
+}
+.Other_Brand h2 i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #294433;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    background-size: contain;
+}
+.Other_Brand h2 span img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
 }
 .OB_StyleC{
     margin-bottom: 150px;
@@ -1659,9 +1709,15 @@ position: relative;
     width: 100%;
 }
 .GoodsList>li{
+    /* overflow: hidden; */
     width: 25%;
     margin-right: 30px;
     /* box-shadow: 3px #ddd; */
+}
+.GoodsList>li div{
+    width: 278px;
+    overflow: hidden;
+    height: 278px;
 }
 .GoodsList>li img{
     width: 278px;
@@ -1676,11 +1732,15 @@ position: relative;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg,#dcdada4b,rgba(255, 255, 255, 0));
+    background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0));
     left: 0;
     top: 0;
     
 
+}
+.GoodsList>li:hover>a>div img{
+    transition: all 0.5s ease 0s;
+    transform: scale(1.1);
 }
 /* .GoodsList>li>a>div::before{
     background: #294433;
@@ -1695,13 +1755,11 @@ position: relative;
     background: linear-gradient(0deg,#29443365,rgba(255, 255, 255, 0));
     transition: all 0.5s ease 0s;
 } */
+
 .GoodsList>li:hover .OB_HotlistTxt{
-    background: #294433;
-    color: #ddd;
-}
-.GoodsList>li:hover .OB_HotlistTxt h3{
+    background: linear-gradient(0deg,#dcdada,#dcdada5a)
     
-    color: #D7C08E;
+
 }
 .GoodsList>li:hover .OB_HotlistTxt .OB_HLTxtPrice>span:nth-of-type(1){
     color: #999;
@@ -1789,10 +1847,10 @@ position: relative;
     width: 20%;
     transition: all 0.5s ease 0s;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 .OB_HotbrandList>li:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: grayscale(0);
 }
 .OB_HotbrandList>li:hover{
@@ -1830,9 +1888,7 @@ position: relative;
     position: relative;
 }
 
-.OB_HotKeyIN{
-    
-}
+
 .OB_inHotKeyword{
     margin-left: 30px;
     margin-top: 20px;
@@ -1848,7 +1904,7 @@ position: relative;
     display: flex;
     opacity: 0;
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 0;
     pointer-events: none;
     
