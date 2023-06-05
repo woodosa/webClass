@@ -1,7 +1,8 @@
-onload=function(){
+window.onload=function(){
 
     
     let dtlist=document.querySelectorAll(".OB_HotKeyIN>dt")
+    
     for(let i=0;i<dtlist.length;i++){
         dtlist[i].addEventListener("click", function(){
             for(let j=0;j<dtlist.length;j++){

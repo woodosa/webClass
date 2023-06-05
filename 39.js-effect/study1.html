@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/study1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none;color: inherit;}
+        ul,ol{
+            list-style: none;
+        }
+        @font-face {
+            font-family: "century";
+            src: url(./HARLOWSI.TTF);
+        }
+        .wrap>section{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+        .btnMenu{
+            border: 2px solid black;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            padding:10px 20px ;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        nav{
+            position: fixed;
+            background: seagreen;
+            width: 25%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            padding: 30px;
+            transform: translateX(-100%);
+            transition: all 0.7s ease 0s;
+        }
+        nav.on{
+            transform: translateX(0);
+        }
+        .gnb{
+            font-family: "century";
+            color: pink;
+        }
+        .gnb>li{
+            padding-left: 5px;
+            height: 50px;
+            overflow: hidden;
+            transition: all 0.7s ease 0s;
+        }
+        .gnb>li>ul{
+            background: rgba(255, 255, 255, 0.845);
+            height: 0;
+            transition: all 0.7s ease 0s;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 200;
+            
+        }
+        .gnb>li>a{
+            font-size: 28px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.793);
+            display: block;
+            height: 50px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .gnb ul>li{
+            font-size: 15px;
+            height: 50px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            
+        }
+        /* .gnb>li.on{
+            height: auto;
+            overflow: none;
+        } */
+        .gnb>li.on>ul{
+            height: auto;
+            transition: all 0.7s ease 0s;
+        }
+        .gnb>li a>span{
+            width: 20px;
+            height: 2px;
+            background: pink;
+            margin-right: 10px;
+            transform: translateX(-300px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.7s ease 0s;
+        }
+        .gnb>li.on a>span{
+            width: 20px;
+            height: 2px;
+            background: pink;
+            margin-right: 10px;
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="btnMenu">MENU</div>
+    <nav>
+        <ul class="gnb">
+            <li ><a href="#">About <span></span></a>
+                <ul>
+                    <li><a href="#">MenuDepth2-1</a></li>
+                    <li><a href="#">MenuDepth2-2</a></li>
+                    <li><a href="#">MenuDepth2-3</a></li>
+                    <li><a href="#">MenuDepth2-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Profile<span></span></a>
+                <ul>
+                    <li><a href="#">MenuDepth2-1</a></li>
+                    <li><a href="#">MenuDepth2-2</a></li>
+                    <li><a href="#">MenuDepth2-3</a></li>
+                    <li><a href="#">MenuDepth2-4</a></li>
+                    <li><a href="#">MenuDepth2-5</a></li>
+                    <li><a href="#">MenuDepth2-6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Popup<span></span></a>
+                <ul>
+                    <li><a href="#">MenuDepth2-1</a></li>
+                    <li><a href="#">MenuDepth2-2</a></li>
+                    <li><a href="#">MenuDepth2-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Banner<span></span></a>
+                <ul>
+                    <li><a href="#">MenuDepth2-1</a></li>
+                    <li><a href="#">MenuDepth2-2</a></li>
+                    <li><a href="#">MenuDepth2-3</a></li>
+                    <li><a href="#">MenuDepth2-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contract<span></span></a>
+                <ul>
+                    <li><a href="#">MenuDepth2-1</a></li>
+                    <li><a href="#">MenuDepth2-2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <section>section1</section>
+        <section>section2</section>
+        <section>section3</section>
+        <section>section4</section>
+    </div>
+    
+</body>
+</html>
