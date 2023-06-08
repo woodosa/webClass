@@ -185,8 +185,9 @@ header:hover{
 .menubutton.on {
     opacity: 1;;
     height: 100%;
-    width: 25%;
+    width: 25vw;
     pointer-events: auto;
+
 }
 
 .menutop img{
@@ -200,32 +201,151 @@ header:hover{
     height: 600px;
     margin: 150px auto;
 }
-.menubottom>ul>li {
+.menubottom>ul>li{
     height: 80px;
-    border: 1px solid red;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-left: 30px;
     font-size: 28px;
     color: #D7C08E;
     font-weight: 400;
 }
-.menubottom>ul>li ul>li{
+
+
+/* .menubottom>ul>li.on{
+    overflow: auto;
+} */
+
+
+
+/* .menubottom>ul>li ul>li{
+    border: 1px solid blue;
     margin-top: 30px;
     margin-left: 30px;
     font-size: 18px;
     color: #ddd;
     font-weight: 200;
+} */
+.menubottom>ul>li>ul{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    background: #294433;
+    opacity: 0;
+    pointer-events: none;
+    color: #999;
+    font-size: 28px;
 }
-.menubottom>ul>li>ul>li{
-    color: white;
+.menubottom>ul>li.on>ul{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(25vw);
+    background: #294433;
+    opacity: 1;
+    pointer-events: none;
+    border-left: 1px solid #d7c08e7f;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    pointer-events: auto;
     
 }
+
+.menubottom>ul>li.on>ul>li:hover{
+    color:#ddd
+}
+.menubottom>ul>li.on>ul>li div>ul{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(0vw);
+    background: #294433;
+    opacity: 0;
+    pointer-events: none;
+    border-left: 1px solid #d7c08e7f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease 0s;
+    color: #999;
+}
+.menubottom>ul>li.on>ul>li div>ul>li:hover>a{
+    transition: all 0.5s ease 0s; 
+    color:#ddd
+}
+.menubottom>ul>li.on>ul>li.on div>ul{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(25vw);
+    background: #294433;
+    opacity: 1;
+    pointer-events: auto;
+    border-left: 1px solid #d7c08e7f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    align-items: center;
+}
+.menubottom>ul>li.on>ul>li.on div>ul>li{
+    margin-top: 50px;
+}
+
+
 .menubottom>ul>li>div{
     position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    background: #294433;
+    opacity: 0;
+    pointer-events: none;
 
 }
+.menubottom>ul>li.on>div{
+    border-left: 1px solid #d7c08e7f;
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    transform: translateX(25vw);
+    background: #294433;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 22px;
+}
+
+.menubottom>ul>li.on>div>ul>li{
+
+    margin-bottom: 50px;
+}
+.menubottom>ul>li.on>div>ul>li:hover{
+    color: #ddd;
+    margin-bottom: 50px;
+}
+
+
 
 .menubottom>ul>li>ul>li:hover::before{
     opacity: 1;
@@ -242,6 +362,9 @@ header:hover{
     opacity: 0;
     
 }
+
+
+
 /* .headL.on .menubottom::before{
     content: "";
     width: 100%;
@@ -1599,18 +1722,43 @@ position: relative;
 
 
 .OB_mainBanner{
-    width: 100%;
+    width: 1900px;
     height: 794px;
+    margin: 0 auto;
 
+}
+.OB_mainBanner.swiper>.swiper-button-next{
+    right: 3%;
+}
+.OB_mainBanner.swiper>.swiper-button-prev{
+    left: 3%;
+}
+.OB_mainBanner .swiper-button-next,.OB_mainBanner .swiper-button-prev{
+    color: #5d5d5d;
+    opacity: 0.5;
+}
+.OB_mainBanner .swiper-button-next:hover{
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+.OB_mainBanner .swiper-button-prev:hover{
+    opacity: 1;
+    transition: all 0.5s ease 0s;
 }
 .OB_mainBanner.swiper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.OB_mainBanner .swiper-pagination-bullet-active{
+    background: #5d5d5d;
+}
+.OB_mainBanner .swiper-button-next:after,.OB_mainBanner .swiper-button-prev:after{
+    font-size: 80px;
+}
 /* .OB_videoBanner video{
     width: 100%;
-    height: 100%;
+    height: 100%;   
     object-fit: cover;
 } */
 
@@ -1823,7 +1971,7 @@ position: relative;
 
 } */
 .GoodsList>li:hover .OB_HotlistTxt .OB_HLTxtPrice>span:nth-of-type(1){
-    color: #999;
+    /* color: #999; */
 }
 
 .OB_HotlistTxt{
@@ -1843,8 +1991,14 @@ position: relative;
     color: #666;
     margin-bottom: 10px;
 }
+.OB_HotlistTxt p{
+    font-size: 16px;
+    font-weight: 300;
+}
 .OB_HotlistTxt>dl{
-    margin-top: 15px;
+    border-top:0.75px solid #ddd ;
+    padding-top: 10px;
+    margin-top: 10px;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -1863,17 +2017,18 @@ position: relative;
 
 
 .OB_HLTxtPrice{
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 400;
     display: flex;
 }
-.OB_HLTxtPrice>span:nth-of-type(1){
+.OB_HLTxtPrice>span:nth-last-of-type(3){
     width: 45%;
     /* border: 1px solid red; */
     color: #ddd;
+    font-size: 16px;
     text-decoration:line-through;
 }
-.OB_HLTxtPrice>span:nth-of-type(1)+span{
+.OB_HLTxtPrice>span:nth-last-of-type(2){
     color: orange;
     margin-right: 12px;
 }
@@ -2024,7 +2179,6 @@ position: relative;
 }
 .OB_AccContent{
     display: flex;
-    border: 1px solid red;
     height: 500px;
     justify-content: space-between;
 }
@@ -2066,15 +2220,44 @@ position: relative;
 }
 .AccList>ul{
     display: flex;
+    justify-content: space-between;
 }
 .AccList>ul>li{
-    width: 220px;
+    width: 200px;
     height: 360px;
-    border: 1px solid red;
+    
 }
 .AccList>ul>li img{
-    border: 1px solid red;
     width: 100%;
     height: 280px;
     object-fit: contain;
+    position: relative;
+}
+.AccList>ul>li>a>div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+.AccList>ul>li>a>div>h4+span{
+    color: #777;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 5px;
+
+}
+.AccList>ul>li>a>figure{
+    position: relative;
+}
+.AccList>ul>li>a>figure::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0)); 
 }
