@@ -48,13 +48,13 @@ h2{font-weight: 400;}
 
 
 
+
 /*헤더*/
 header {
     width: 100%;
     height: 80px;
     position: fixed;
     display: flex;
-    background: #294433;
     color: #D7C08E;
     left: 0;
     top: 0;
@@ -63,13 +63,10 @@ header {
     font-size: 15px;
     z-index: 1400;
     overflow: hidden;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
-header:hover{
-    width: 100%;
-    height: 80px;
-    background: #294433;
-    color: #D7C08E;
+header.on{
+    background: #294433;;
 }
 
 
@@ -202,6 +199,7 @@ header:hover{
     margin: 150px auto;
 }
 .menubottom>ul>li{
+    cursor: pointer;
     height: 80px;
     /* overflow: hidden; */
     margin-left: 30px;
@@ -241,6 +239,7 @@ header:hover{
 }
 .menubottom>ul>li>ul>li{
     margin-top: 100px;
+    cursor: pointer;
 }
 .menubottom>ul>li.on>ul{
     position: absolute;
@@ -487,7 +486,7 @@ header:hover{
    transform: translateX(-50%);
    top: -20%;
 }
-#bpbg{
+.bpbg{
     position: absolute;
     bottom: 0%;
     right: 50%;
@@ -832,9 +831,15 @@ main{
     left: 50%;
     top: 722px; 
     z-index: 100;
+    width: 174px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: #D7C08E 1px solid;
+    transition: all 0.7s ease 0s;
     margin-top: 50px;
 }
-.styleguide>section>a::after{
+/* .styleguide>section>a::after{
     display: flex;
     position: absolute;
     transform: translate(-50%,-25%);
@@ -844,7 +849,12 @@ main{
     width: 174px;
     height: 50px;
     border: #D7C08E 1px solid;
+    transition: all 0,7s ease 0s;
     z-index: 1;
+} */
+.styleguide>section>a:hover{
+    background: #D7C08E;
+    color: #294433;
 }
 
 
@@ -916,7 +926,6 @@ main{
 /*브랜드슬라이드*/
 
 .main_otherbrand_brand{
-    border: 1px solid red;
     width: 1200px;
     height: 700px;
     margin: 0 auto;
@@ -929,12 +938,12 @@ main{
     
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 45px;
 
 }
 .main_otherbrand_brand>h2 img{
-    width: 20px;
-    height: 20px;
+    width:  32px;
+    height: 32px;
     object-fit: cover;
 }
 /* .main_otherbrand_brand>h2>a{
@@ -975,6 +984,7 @@ main{
 }
 .main_otherbrand_List>ul>li{
     width: 28%;
+    position: relative;
     
 }
 .main_otherbrand_List>ul>li>a>img{
@@ -982,21 +992,31 @@ main{
     height: 100%;
     object-fit: contain;
 }
-.main_otherbrand_List>ul>li>a>::after{
+.main_otherbrand_List>ul>li>a>img::after{
     content: "";
+    border: 1px solid blue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0));
+}
+/* .main_otherbrand_List>ul>li>a>img::after{
+    content: "";
+    border: 1px solid blue;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0)); 
-}
+} */
 
 .main_otherbrand_txt{
     padding-left: 30px;
     padding-bottom: 30px;
     height: 200px;
-    border: 1px solid red;
 }
 .main_otherbrand_txt h3{
    font-size: 32px;
@@ -1018,7 +1038,31 @@ main{
  .main_otherbrand_txt>p{
     margin-bottom: 15px;
  }
+ .main_otherbrand_brand .swiper-button-next{
+    top: 680px;
+    width: 50px;
+    right: calc(50% - 120px);
+    color: #5d5d5d75;
+    transition: all 0.5s ease 0s;
 
+ }
+ .main_otherbrand_brand .swiper-button-prev{
+    top: 680px;
+    width: 50px;
+    left: calc(50% - 120px);
+    color: #5d5d5d75;
+    transition: all 0.5s ease 0s;
+
+ }
+ .main_otherbrand_brand .swiper-button-next:hover{
+    color: #5d5d5d;
+ }
+ .main_otherbrand_brand .swiper-button-prev:hover{
+    color: #5d5d5d;
+ }
+ .main_otherbrand_brand .swiper-button-next:after,.main_otherbrand_brand .swiper-button-prev:after{
+    font-size: 25px;
+ }
 
 
 
@@ -1040,6 +1084,7 @@ main{
 }
 .main_controler>ul>li{
     opacity: 40%;
+    transition: all 0.5s ease 0s ;
 }
 .main_controler>ul .on{
     opacity: 1;
@@ -1808,7 +1853,7 @@ position: relative;
     height: 100%;
     object-fit: cover;
 }
-.OB_mainBanner .swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active{
     background: #5d5d5d;
 }
 .OB_mainBanner .swiper-button-next:after,.OB_mainBanner .swiper-button-prev:after{
@@ -2318,4 +2363,69 @@ position: relative;
     top: 0;
     left: 0;
     background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0)); 
+}
+
+
+
+/*js option*/
+.main_bespoke h1.mltr{
+    transform: translateX(-100%);
+    opacity: 0.1;
+    transition: all 1s ease 0s;
+}
+.main_bespoke h1.mltr.on{
+    transform: translateX(-50%);
+    opacity: 1;
+}
+.main_bespoke video.videoAnimate{
+    filter: brightness(0.1);
+    transition: all 1s ease 0s;
+}
+.main_bespoke video.videoAnimate.on{
+    filter: brightness(1.2);
+}
+.BG{
+    opacity: 0.1;
+    
+    transition: all 1s ease 0s;
+    
+}
+.BG.on{
+    opacity: 1;
+}
+.mltr{
+    opacity: 0.1;
+    transition: all 1s ease 0s;
+    transform: scale(0.7) translateX(-150px);
+}
+.mltr.on{
+    opacity: 1;
+    transform: scale(1) translateX(0%);
+}
+.heritage .mttb{
+    transition: all 1s ease 0s;
+    opacity: 0.1;
+    transform: translate(-70%,50px);
+}
+.heritage .mttb.on{
+    opacity: 1;
+    transform: translate(-70%, 0px);
+}
+.heritage section h2.mttb{
+    opacity: 0.1;
+    transition: all 1s ease 0.5s;
+    transform: translateY(50px);
+}
+.heritage section h2.mttb.on{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.styleguide .mttb{
+    transition: all 1s ease 0s;
+    opacity: 0.1;
+    transform: translate(-50%, 50px);
+}
+.styleguide .mttb.on{
+    opacity: 1;
+    transform: translate(-50%,0px);
 }

@@ -19,8 +19,10 @@ $(document).ready(function(){
 
     $(".menubottom>ul>li").click(function(){      
         if($(this).hasClass("on")==true){
+            $(".menubutton").find("li").removeClass("on")
             $(this).removeClass("on")
         }else{
+            $(".menubutton").find("li").removeClass("on")
             $(".menubottom>ul>li").removeClass("on")
             $(this).addClass("on")
             
@@ -49,7 +51,7 @@ $(document).ready(function(){
         }else{
             $(menuDepth).removeClass("on")
             $(this).addClass("on")
-            $(this).css("color","#ddd")
+            if($(this).hasClass("on")==true){$(this).css("color","#ddd")}
         }
         })  
     }

@@ -18,7 +18,7 @@ $(document).ready(function(){
           // pauseOnMouseEnter:true
 
         },
-        speed:2000,
+        speed:3500,
     });
 
 
