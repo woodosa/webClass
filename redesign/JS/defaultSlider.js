@@ -15,11 +15,11 @@ $(document).ready(function(){
       autoplay:{
         delay: 3500,
           disableOnInteraction: false,
-          // pauseOnMouseEnter:true
+          pauseOnMouseEnter:true
 
         },
         speed:3500,
     });
 
-
+    
 })

@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./JS/Menu.js"></script>
+    <script src="./JS/bespoke.js"></script>
+
+    <!-- css -->
     <link rel="stylesheet" href="./css/kumkang.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,46 +22,116 @@
     <div class="container">
         <header>
             <div class="headL">
-                <a href="#"><img src="./source/img/icon/SVG/Asset 4.svg" alt="메뉴로고"></a>
-                <div class="menubutton">
-                    <div class="menutop">
-                        <a href="#"><img src="./source/img/icon/SVG/Asset 1.svg" alt="메뉴로고"></a>
-                        
-                    </div>
-                    <div class="menubottom">
-                        <ul>
-                            <li>CLASSIC
-                                <ul>
-                                    <li><a href="./bespoke.html">비스포크 서비스</a></li>
-                                    <li><a href="">리갈</a></li>
-                                    <li><a href="./haritage.html">헤리티지</a></li>
-                                </ul>
-                            </li>
-                            <li>CASUAL
-                                <ul>
-                                    <li><a href="./otherbrand.html">남성</a></li>
-                                    <li><a href="./otherbrand.html">여성</a></li>
-                                    <li><a href="./otherbrand.html">ACC</a></li>
-                                </ul>
-                            </li>
-                            <li>ABOUT COMPANY</li>
-                        </ul>
-                    </div>
-                    
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <i>메뉴</i>
+                <!-- <a href="#"><img src="./source/img/icon/SVG/Asset 4.svg" alt="메뉴로고"></a> -->
             </div>
-            <div class="logo">
-                <a href="#"><img src="./source/img/icon/SVG/Asset 1.svg" alt="금강로고"></a>
+            <div class="blackcover"></div>
+        <div class="menubutton">
+            <div class="menutop">
+                <a href="#"><img src="./source/img/icon/SVG/Asset 1.svg" alt="메뉴로고"></a>
+                
             </div>
-            <div class="headR">
+            
+            <div class="menubottom">
                 <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">장바구니</a></li>
-                    <li><a href="#">고객센터</a></li>
+                    <li>CLASSIC
+                        <ul>
+                            <li>남성
+                                <div>
+                                    <ul>
+                                        <li><a href="#">옥스포드</a></li>
+                                        <li><a href="#">드레스</a></li>
+                                        <li><a href="#">로퍼</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>여성
+                                <div>
+                                    <ul>
+                                        <li><a href="#">드레스</a></li>
+                                        <li><a href="#">로퍼</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="./bespoke.html">비스포크</a></li>
+                        </ul>  
+                        
+                    </li>   
+                    <li>CASUAL
+                        <ul>
+                            <li>남성
+                                <div>
+                                    <ul>
+                                        <li><a href="#">캐주얼</a></li>
+                                        <li><a href="#">스니커즈</a></li>
+                                        <li><a href="#">키높이</a></li>
+                                        <li><a href="#">광폭</a></li>
+                                        <li><a href="#">고어텍스</a></li>
+                                        <li><a href="#">골프화</a></li>
+                                        <li><a href="#">등산화</a></li>
+                                        <li><a href="#">샌들</a></li>
+                                    </ul>
+                                </div>       
+                            </li>
+                            <li>여성
+                                <div>
+                                    <ul>
+                                        <li><a href="#">캐주얼</a></li>
+                                        <li><a href="#">스니커즈</a></li>
+                                        <li><a href="#">골프화</a></li>
+                                        <li><a href="#">등산화</a></li>
+                                        <li><a href="#">샌들</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>  
+                    <li> ACC
+                            <div>
+                                <ul>
+                                    <li><a href="#">장지갑</a></li>
+                                    <li><a href="#">중지갑</a></li>
+                                    <li><a href="#">카드지갑</a></li>
+                                    <li><a href="#">반지갑</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">케어용품</a></li>
+                                    <li><a href="#">파우치</a></li>
+                                </ul>
+                            </div>   
+                    </li>
+                    <li>BAG
+                        <div>
+                            <ul>
+                                <li><a href="#">토트백</a></li>
+                                <li><a href="#">숄더백</a></li>
+                                <li><a href="#">백팩</a></li>
+                                <li><a href="#">서류가방</a></li>
+                                <li><a href="#">클러치백</a></li>
+                                <li><a href="#">크로스백</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
             
-        </header>
+        </div>
+                <div class="logo">
+                    <a href="#"><img src="./source/img/icon/SVG/Asset 1.svg" alt="금강로고"></a>
+                </div>
+                <div class="headR">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                
+            </header>
         <main>
             <div class="videobanner ">
                 <video id="bespoke_video" src="./source/videos/kumkang (8).mp4" autoplay muted loop></video>

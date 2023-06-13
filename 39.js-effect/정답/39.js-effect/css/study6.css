@@ -1,24 +1,23 @@
 *{margin:0;padding:0;}
-ul{list-style:none;}
-a{text-decoration: none;color:inherit;}
-img{max-width:100%;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
 
-/* slide layout */
+/* slider layout */
 .station{
-    width:100%;
-    height:600px;
+    width:500px;
+    height:300px;
+    margin:0 auto;
     overflow: hidden;
-    position:relative;
+    position: relative;
 }
 .train{
-    width:calc(500%/1);
-    height:100%;
-    display:flex;
-    transition:all 1s ease 0s;
+    width:100%;
+    height:500%;
+    transition:all 0.7s ease 0s;
 }
 .train>li{
-    width:20%;
-    height:100%;
+    width:100%;
+    height:20%;
 }
 .train>li img{
     width:100%;

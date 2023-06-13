@@ -976,6 +976,7 @@ main{
     width: 460px;
     height: 460px;
     object-fit: cover ;
+    filter:contrast(1.2) saturate(1.2);
 }
 .main_otherbrand_List>ul{
     display: flex;
@@ -984,43 +985,49 @@ main{
 }
 .main_otherbrand_List>ul>li{
     width: 28%;
-    position: relative;
     
 }
-.main_otherbrand_List>ul>li>a>img{
+.main_otherbrand_List>ul>li>a img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}   
+.main_otherbrand_List>ul>li>a>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
 }
-.main_otherbrand_List>ul>li>a>img::after{
-    content: "";
-    border: 1px solid blue;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0));
+.main_otherbrand_List>ul>li>a>div>h4{
+    font-weight: 400;
+    font-size: 15px;
 }
-/* .main_otherbrand_List>ul>li>a>img::after{
+.main_otherbrand_List>ul>li>a>div>span:nth-of-type(1){
+    color: #999;
+    margin-bottom: 5px;
+}
+.main_otherbrand_List>ul>li>a>figure{
+    position: relative;
+}
+.main_otherbrand_List>ul>li>a>figure::after{
     content: "";
-    border: 1px solid blue;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0)); 
-} */
+}
 
 .main_otherbrand_txt{
     padding-left: 30px;
     padding-bottom: 30px;
-    height: 200px;
+    height: 150px;
 }
 .main_otherbrand_txt h3{
    font-size: 32px;
    font-weight: 500;
+   color: #294433;
 }
 .main_otherbrand_txt h4{
     font-size: 17px;
@@ -1030,7 +1037,7 @@ main{
     margin-bottom: 15px;
  }
  .main_otherbrand_txt>span{
-    text-decoration: underline;
+    border-bottom: 0.75px solid #999;
     font-size: 15px;
 
     color: #666;
@@ -1556,8 +1563,8 @@ position: relative;
 
 .Hregal_styleguide{
     padding-top: 1180px;
-    position: relative;
     height: 1080px;
+    
 }
 .Hregal_styleguide>h1{
     text-align: center;
@@ -1590,15 +1597,15 @@ position: relative;
 } */
 
 
-.Hregal_styleguide>ul{
+.Hregal_styleguide>div>ul{
     display: flex;
     margin-top: 200px;
 }
-.Hregal_styleguide>ul>li{
-    flex: 1;
+.Hregal_styleguide>div>ul>li{
+    /* flex: 1; */
     text-align: center;
 }
-.Hregal_styleguide>ul>li img{
+.Hregal_styleguide>div>ul>li img{
     width: 200px;
     height: 200px;
     object-fit: contain;
@@ -1742,7 +1749,7 @@ position: relative;
 
 
 .remotecon.remoOn{
-
+    height: 50%;
     opacity: 1;
     pointer-events: auto;
 }
@@ -1753,12 +1760,13 @@ position: relative;
     transform: translate(-960px,-424px);
     background: #294433;
     width: 360px;
-    height: 50%;
+    height: 0;
     padding: 40px;
     box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
     transition: all 0.7s ease 0s;
+    overflow: hidden;
 }
 .remotecon>ul>li>h5{
     font-size: 22px;
@@ -2369,7 +2377,7 @@ position: relative;
 
 /*js option*/
 .main_bespoke h1.mltr{
-    transform: translateX(-100%);
+    transform: translateX(-80%);
     opacity: 0.1;
     transition: all 1s ease 0s;
 }
@@ -2428,4 +2436,11 @@ position: relative;
 .styleguide .mttb.on{
     opacity: 1;
     transform: translate(-50%,0px);
+}
+
+
+/*bespoke_js*/
+
+.filter_icon>img{
+    cursor: pointer;
 }

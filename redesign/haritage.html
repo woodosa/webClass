@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./JS/Menu.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./JS/heritage.js"></script>
 
     <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/kumkang.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -144,56 +145,59 @@
                     대한민국 최고의 장인의 손길이 담긴<br>
                         헤리티지 리갈의 다양한 스타일을 경험해보세요.
                 </h2> -->
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./source/img/icon/SVG/옥스포드.svg" alt="옥스포드">
-                            <h3>옥스포드</h3>
-                            <p>
-                                가장 클래식한 스타일로서, 격식있는 장소에 어울리는 포멀한 구두입니다.
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./source/img/icon/SVG/드레스.svg" alt="드레스">
-                            <h3>드레스</h3>
-                            <p>
-                                클래식과 캐주얼 모두 소화할 수 있는 <br>
-                                가장 대중적인 형태의 구두입니다.
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./source/img/icon/SVG/로퍼.svg" alt="로퍼">
-                            <h3>로퍼</h3>
-                            <p>
-                                신고 벗기에 편안한 형태의 구두로써, <br>  
-                                캐주얼룩, 비즈니스 룩 모두 어울립니다. <br>
-                                시원하고 감각적인 연출을 할 수 있는 구두입니다.
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./source/img/icon/SVG/캐주얼.svg" alt="캐주얼">
-                            <h3>캐주얼</h3>
-                            <p>
-                                가장 캐주얼한 형태의 구두로써, <br>
-                                비즈니스룩에 어울리면서도 발에 편안함을 제공합니다. <br>
-                                 일상화로 가장 적합한 구두입니다. <br>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="SG_Slider swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./source/img/icon/SVG/옥스포드.svg" alt="옥스포드">
+                                <h3>옥스포드</h3>
+                                <p>
+                                    가장 클래식한 스타일로서, 격식있는 장소에 어울리는 포멀한 구두입니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./source/img/icon/SVG/드레스.svg" alt="드레스">
+                                <h3>드레스</h3>
+                                <p>
+                                    클래식과 캐주얼 모두 소화할 수 있는 <br>
+                                    가장 대중적인 형태의 구두입니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./source/img/icon/SVG/로퍼.svg" alt="로퍼">
+                                <h3>로퍼</h3>
+                                <p>
+                                    신고 벗기에 편안한 형태의 구두로써, <br>  
+                                    캐주얼룩, 비즈니스 룩 모두 어울립니다. <br>
+                                    시원하고 감각적인 연출을 할 수 있는 구두입니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="./source/img/icon/SVG/캐주얼.svg" alt="캐주얼">
+                                <h3>캐주얼</h3>
+                                <p>
+                                    가장 캐주얼한 형태의 구두로써, <br>
+                                    비즈니스룩에 어울리면서도 발에 편안함을 제공합니다. <br>
+                                     일상화로 가장 적합한 구두입니다. <br>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="Hregal_list">
                 <div class="Hregal_listhead container">
                     <h1>Heritage regal</h1>
                     <!-- <img src="./source/img/icon/SVG/SVG/Asset 1.svg" alt="헤리티지 백그라운드이미지"> -->
                     <ul>
-                        <li><a href="#"><img src="./source/img/icon/SVG/SVG/필터.svg" alt="필터이미지"></a></li>
+                        <li class="filter_icon"><img src="./source/img/icon/SVG/SVG/필터.svg" alt="필터이미지"></li>
                         <li><a href="#">Dress</a></li>
                         <li>
                             <form action="#" method="post">
