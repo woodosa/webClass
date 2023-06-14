@@ -455,17 +455,17 @@ header.on{
 
 
 .main_bespoke{
-    margin-top: 1330px;
+    margin-top: 1080px;
     position: relative;
-    height: 1600px;
+    /* height: 1600px; */
 }
-.main_bespoke>div{
+/* .main_bespoke>div{
     position: relative;
     height: 600px;
 
-}
+} */
 
-.main_bespoke>div>video{
+/* .main_bespoke>div>video{
     position: absolute;
     width: 1024px;
     height: 600px;
@@ -473,18 +473,42 @@ header.on{
     left: 50%;
     transform: translateX(-75%);
     filter: brightness(1.2);
+} */
+
+.main_bespoke>div>video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    filter: brightness(1.2);
+    transform-origin: left bottom;
+    transition: all 0.3s linear 0s;
+    z-index: -1;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    /* display:flex; */
 }
 
-.main_bespoke>div>h1{
-    position: absolute;
+.main_bespoke h1{
+    /* position: absolute; */
    /* padding-top: 770px; */
+   /* bottom: 0;
+   left: 0; */
+   padding-top:8vh;
    font-size: 120px;
    color: #294433;
    text-transform: uppercase;
+   margin-left:50%;
+   margin-bottom:20px;
    /* margin-left: 100px; */
-   left: 50%;
-   transform: translateX(-50%);
-   top: -20%;
+   /* left: 50%;
+   transform: translateX(-50%); */
+   /* top: -20%; */
+}
+.main_bespoke h1+p{
+    margin-left:50%;
 }
 .bpbg{
     position: absolute;
@@ -499,6 +523,7 @@ header.on{
     width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
+    padding-bottom: 180px;
 }
 
 .main_bespoke>div>h1>span{
@@ -510,7 +535,7 @@ header.on{
     margin-bottom: 100px;
 }
 .bpcontent{
-    padding-top: 210px;
+    padding-top: 100px;
    width: 360px;
 }
 .bpcontent p{
@@ -1036,10 +1061,23 @@ main{
     color: #666;
     margin-bottom: 15px;
  }
+ .Other_Brand .main_otherbrand_txt>span{
+    border-bottom: 0.75px solid #999;
+    font-size: 15px;
+    color: #666;
+    display: inline;
+    cursor: pointer;
+ }
+ .Other_Brand .main_otherbrand_brand h2{
+    font-size: 36px;
+    display: inline-block;
+}
+ .main_otherbrand_List>ul>li>a>div>span{
+    display: block;
+ }
  .main_otherbrand_txt>span{
     border-bottom: 0.75px solid #999;
     font-size: 15px;
-
     color: #666;
  }
  .main_otherbrand_txt>p{
@@ -1085,7 +1123,7 @@ main{
     height: 280px;
     color: #D7C08E;
     z-index: 300;
-
+    transition: all 0.5s ease 0;
     
 
 }
@@ -1965,7 +2003,7 @@ position: relative;
     padding-right: 20px;
 }
 .Other_Brand span{
-    display: flex;
+    /* display: flex; */
     align-items: center
 }
 .Other_Brand h2 i{
@@ -2460,10 +2498,23 @@ position: relative;
     opacity: 1;
     transform: translate(-50%,0px);
 }
+.videobanner .mttb{
+    transition: all 1s ease 0s;
+    opacity: 0.1;
+    transform: translateY(150px);
+}
+.videobanner .mttb.on{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 
 /*bespoke_js*/
 
 .filter_icon>img{
     cursor: pointer;
+}
+.aniScrollBox{
+    padding-top:100vh;
 }
