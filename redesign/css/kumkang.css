@@ -799,7 +799,7 @@ main{
     transition: all 0.4s ease 0s;
 }
 .styleguide>section>ul>li:hover img{
-    transform: scale(1.35);
+    transform: scale(1.15);
 }
 .styleguide>section>ul>li:hover p{
     color: #D7C08E;
@@ -937,13 +937,13 @@ main{
     margin: 80px 0 30px 0;
     
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 45px;
+    font-weight: 500;
+    font-size: 38px;
 
 }
 .main_otherbrand_brand>h2 img{
-    width:  32px;
-    height: 32px;
+    width:  28px;
+    height: 28px;
     object-fit: cover;
 }
 /* .main_otherbrand_brand>h2>a{
@@ -1027,7 +1027,7 @@ main{
 .main_otherbrand_txt h3{
    font-size: 32px;
    font-weight: 500;
-   color: #294433;
+   color: black;
 }
 .main_otherbrand_txt h4{
     font-size: 17px;
@@ -1599,28 +1599,51 @@ position: relative;
 
 .Hregal_styleguide>div>ul{
     display: flex;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .Hregal_styleguide>div>ul>li{
     /* flex: 1; */
     text-align: center;
 }
 .Hregal_styleguide>div>ul>li img{
-    width: 200px;
+    width: 30%;
     height: 200px;
     object-fit: contain;
 }
-.Hregal_styleguide>ul>li>a>h3{
+.Hregal_styleguide>div>ul>li>a>h3{
     font-size: 22px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
-.Hregal_styleguide>ul>li>a>p{
+.Hregal_styleguide>div>ul>li>a>p{
     color: #666
 }
+.Hregal_styleguide>h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 22px;
+    color: black;
+}
 
-
+.Hregal_styleguide>h2::before{
+    content: "";
+    width: 320px;
+    height: 1.5px;
+    background: #D7C08E;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.Hregal_styleguide>h2::after{
+    content: "";
+    width: 320px;
+    height: 1.5px;
+    background: #D7C08E;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 /*헤리갈 상품페이지*/
 .Hregal_list{
@@ -1727,12 +1750,12 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #F7F7F7;
+    background: #e9e9e9;
     width: 380px;
     height: 380px;
 }
 .Hregal_mainlist>section>ul>li>a>div:hover>img{
-    transform: scale(1.3);
+    transform: scale(1.15);
     transition: all 0.6s ease 0s;
 }
 .Hregal_mainlist>section>ul>li>a>div:hover{
