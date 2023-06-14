@@ -44,12 +44,17 @@ $(document).ready(function () {
         
         let targetHeight = $(".aniVideo").height()
         let transformRatio =(winst-videoTop)/(targetHeight);
+        let scaleRatio =(winst-videoTop)/(targetHeight);
 
-        if (winst >= videoTop && winst< videoTop+(targetHeight)/2) {
-            console.log(transformRatio)
-            $(".aniVideo").css("transform","scale("+(1-transformRatio)
-            +")translateY("+(transformRatio*100)+"%)").css("left",8*transformRatio+"vw")
-            
+        if (winst >= videoTop && winst< videoTop+(targetHeight)) {
+            // console.log(transformRatio)
+            if(scaleRatio>0.6){scaleRatio=0.6}
+            $(".aniVideo").css("left",6*scaleRatio+"vw")
+            $(".aniVideo").css("transform","scale("+(1-(scaleRatio*0.4))
+            +")translateY("+(transformRatio*115)+"%)")
+            if(transformRatio<0.8){
+                $(".aniVideo").css("top",3*transformRatio+"vw")
+            }
             $(".aniScrollBox").css("padding-bottom",transformRatio*50+"vh")
             
         }

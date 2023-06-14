@@ -484,7 +484,7 @@ header.on{
     top: 0;
     filter: brightness(1.2);
     transform-origin: left bottom;
-    transition: all 0.3s linear 0s;
+    /* transition: all 0.2s linear 0s; */
     z-index: -1;
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
@@ -496,7 +496,7 @@ header.on{
    /* padding-top: 770px; */
    /* bottom: 0;
    left: 0; */
-   padding-top:8vh;
+   padding-top:20vh;
    font-size: 120px;
    color: #294433;
    text-transform: uppercase;
