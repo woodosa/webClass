@@ -1287,13 +1287,13 @@ footer>section{
     top: 200px;
 }
 
-.bespoke>h2{
+.bespoke>div>h2{
     font-size: 28px;
     font-weight: 400;
     margin-top: 108px;
     margin-bottom: 40px;
 }
-.bespoke>p{
+.bespoke>div>p{
     margin-top: 15px;
 }
 
@@ -1330,7 +1330,7 @@ footer>section{
     color: #D7C08E;
     text-align: center;
 }
-.make>section>ul>li>div{
+.make>section>div>ul>li>div{
     
     height: 410px;
 
@@ -1339,49 +1339,49 @@ footer>section{
 
 }
 
-.make>section>ul>li>div>*{
+.make>section>div>ul>li>div>*{
     padding-left: 122px;
 }  
 
-.make>section>ul>li:nth-last-of-type(1){
+.make>section>div>ul>li:nth-last-of-type(1){
     flex-direction: row-reverse;
 }
-.make>section>ul>li:nth-last-of-type(1)>div{
+.make>section>div>ul>li:nth-last-of-type(1)>div{
     width: 542px;
     transform: translateX(-100%);
 }
-.make>section>ul>li:nth-last-of-type(1)>div>h2{
+.make>section>div>ul>li:nth-last-of-type(1)>div>h2{
     font-size: 120px;
     white-space: nowrap;
 }
-.make>section>ul>li:nth-last-of-type(1)>div>*{
+.make>section>div>ul>li:nth-last-of-type(1)>div>*{
     padding-left: 0;
 }
 
 
-.make>section>ul>li:nth-last-of-type(3){
+.make>section>div>ul>li:nth-last-of-type(3){
     flex-direction: row-reverse;
 }
-.make>section>ul>li:nth-last-of-type(3)>div{
+.make>section>div>ul>li:nth-last-of-type(3)>div{
     width: 542px;
     transform: translateX(-100%);
 }
-.make>section>ul>li:nth-last-of-type(3)>div>h2{
+.make>section>div>ul>li:nth-last-of-type(3)>div>h2{
     text-align: left;
 }
-.make>section>ul>li:nth-last-of-type(3)>div>*{
+.make>section>div>ul>li:nth-last-of-type(3)>div>*{
     padding-left: 0;
 }
 
 
 
 
-.make>section>ul>li{
+.make>section>div>ul>li{
     display: flex;
 
     margin-top: 200px;
 }
-.make>section>ul>li>img{
+.make>section>div>ul>li>img{
     width: 650px;
     height: 406px;
     object-fit: contain;
@@ -1395,7 +1395,7 @@ footer>section{
     top: 0;
 } */
 
-.make>section>ul>li>div>h2{
+.make>section>div>ul>li>div>h2{
     border-bottom:0.75px solid #D7C08E ;
     font-size: 90px;
     padding-bottom: 10px;
@@ -1403,13 +1403,14 @@ footer>section{
     color: #D7C08E;
     
 }
-.make>section>ul>li>div>h3{
+.make>section>div>ul>li>div>h3{
     margin-top: 50px;
     margin-bottom: 60px;
     color:white;
     font-size: 28px;
     font-weight: 400;
 }
+
 
 
 
@@ -2534,3 +2535,7 @@ position: relative;
     position: relative;
     padding-bottom: 500vh;
 } */
+.mvTitle{
+    /* transform: translateX(-450px); */
+
+}
