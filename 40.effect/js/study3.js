@@ -6,11 +6,17 @@ $(document).ready(function(){
     //     textSize:150
     // })
 
-    $(".btn").click(function(){
         txtAni(".title",{
             aniDelay:0.5,
             aniSpeed:1,
-            aniTxtSize:150
+            aniTxtSize:150,
+            effect:"moveBottomtoTop"
         })
-    })
+        txtAni(".title2",{
+            aniDelay:0,
+            aniSpeed:0.05,
+            aniTxtSize:50,
+            effect:"scale"
+        })
+    
 })
