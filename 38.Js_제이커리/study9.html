@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./css/study9.css">
+    <style>
+        *{margin: 0;padding: 0;}
+        .box{
+                position: fixed;
+                left: 0;
+                top: 0;
+        }
+        .con{
+            height: 2000px;
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box">
+            <h1>mousemove()</h1>
+            <p>사용자가 마우스르 움직일 때 마다 실행되는 함수</p>
+            <p class="offset">
+                문서기준 X좌표: <span class="XCord">0</span>
+                <br>
+                문서기준 Y좌표: <span class="YCord">0</span>
+            </p>
+            <p class="offset">
+                화면기준 X좌표: <span class="XCord2">0</span>
+                <br>
+                화면기준Y좌표: <span class="YCord2">0</span>
+            </p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            //마우스를 움직일 때 마다 실행되는 mousemove함수
+            $(document).mousemove(function(event){
+                let dx =event.pageX
+                let dy =event.pageY
+                $(".XCord").text(dx)
+                $(".YCord").text(dy)
+                let cx=event.clientX
+                let cy=event.clientY
+                $(".XCord2").text(cx)
+                $(".YCord2").text(cy)
+            })
+            
+        })
+    </script>
+</body>
+</html>

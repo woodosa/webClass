@@ -34,14 +34,8 @@ function ScrollMovTxt(MoveTag,MoveDirectionOption){
     //     }
     // }
     // ver.1  
-    console.log("스크롤길이",winst)
-    console.log("화면높이",winHeight)
-    console.log("걸리는지점",winst+winHeight)
-    console.log("태그높이",mvTop)
-    console.log("-------------------------")
     $(MoveTag).css("transform",moveDirection+(-moveOriginPoint)+"px)")
     if(winst+winHeight>=mvTop){
-        console.log(movePercent)
         if(movePercent > stopPoint){movePercent= stopPoint}
         $(MoveTag).css("transform",moveDirection+movePercent+"px)")
     } 
@@ -63,24 +57,13 @@ function MinusScrollMovTxt(MoveTag,MoveDirectionOption){
     let stopPoint= MoveDirectionOption.stop?MoveDirectionOption.stop:1
 
     $(MoveTag).css("transform",moveDirection+(-moveOriginPoint)+"px)")
-    // $(MoveTag).css("transition","all 0.1s ease 0s")
-    console.log("스크롤길이",winst)
-    console.log("화면높이",winHeight)
-    console.log("걸리는지점",winst+winHeight)
-    console.log("태그높이",mvTop)
-    console.log("-------------------------")
+    $(MoveTag).css("transition","all 0.1s ease 0s")
     if(winst+winHeight>=mvTop){
         // console.log("transform",moveDirection+movePercent+"px)")
         // $(MoveTag).css("transform",moveDirection+(movePercent)+"px)")
-
         if(movePercent < stopPoint){movePercent= stopPoint}
         $(MoveTag).css("transform",moveDirection+(movePercent)+"px)")
-        console.log("스크롤길이",winst)
-        console.log("화면높이",winHeight)
-        console.log("걸리는지점",winst+winHeight)
-        console.log("태그높이",mvTop)
         // console.log("오리진포인트",moveOriginPoint)
-        console.log("-------------------------")
     } 
 
     // 방향양식
