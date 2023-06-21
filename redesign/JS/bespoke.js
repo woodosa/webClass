@@ -45,12 +45,12 @@ $(document).ready(function(){
         // let targetTop = target.offset().top
         let winst = $(window).scrollTop();
         console.log(winst)
-        if(winst>=3001){
+        if(winst>=3301){
             target.addClass("bsPadding")
             }else{
                 target.removeClass("bsPadding")
             }
-        if(winst>=firstTargetTop && winst<=2980){
+        if(winst>=firstTargetTop && winst<=3280){
             // console.log(targetTop)
            target.addClass("on")
             

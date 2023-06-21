@@ -1308,7 +1308,7 @@ footer>section{
 .make{
     padding-top: 100px;
     width: 100%;
-    height: 2050px;
+    height: 2350px;
     background: #294433 ;
     color: rgb(192, 191, 191);
     position: relative;
@@ -1690,6 +1690,7 @@ position: relative;
 /*헤리갈 상품페이지*/
 .Hregal_list{
     position: relative;
+    margin-bottom: 200px;
 }
 
 .Hregal_listhead>h1{
@@ -2441,7 +2442,21 @@ position: relative;
     background: linear-gradient(0deg,#dcdada5a,rgba(255, 255, 255, 0)); 
 }
 
+.HR_pagenation {
+    margin: 0 auto;
+    width: 120px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
 
+}
+.pageView{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 38px;
+ border: 1px solid blue;
+}
 
 /*js option*/
 .main_bespoke h1.mltr{
@@ -2575,7 +2590,7 @@ position: relative;
 }
 .bsPadding{
     /* transition: all 0.5s ease 0s; */
-    padding-top: 960px !important;
+    padding-top: 1260px !important;
 }
 .mttb{
     opacity: 0.1;
