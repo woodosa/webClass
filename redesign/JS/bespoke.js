@@ -72,32 +72,32 @@ $(document).ready(function(){
         
     })
     let timer;
-    $(".make_content.container").on("wheel DOMMouseScroll",function(event){
-        let train = $(".make .station>.train")
-        let E = event.originalEvent
-        let delta = 0;
-        if(E.detail){
-         delta = E.detail * -40
-        }else{
-         delta = E.wheelDelta
-        }
-        if(delta<0){
-            clearTimeout(timer)
-            timer = setTimeout(function(){
-                count++
-                if(count>3){count = 3}
-                console.log(count)
-                train.css("transform","translateX("+(-25*count)+"%)")
-            },1000)
-        }else{
-            clearTimeout(timer)
-            timer = setTimeout(function(){
-                count--
-                if(count<0){count=0}
-                console.log(count)
-                train.css("transform","translateX("+(-25*count)+"%)")
-            },1000)
-        }
+    // $(".make_content.container").on("wheel DOMMouseScroll",function(event){
+    //     let train = $(".make .station>.train")
+    //     let E = event.originalEvent
+    //     let delta = 0;
+    //     if(E.detail){
+    //      delta = E.detail * -40
+    //     }else{
+    //      delta = E.wheelDelta
+    //     }
+    //     if(delta<0){
+    //         clearTimeout(timer)
+    //         timer = setTimeout(function(){
+    //             count++
+    //             if(count>3){count = 3}
+    //             console.log(count)
+    //             train.css("transform","translateX("+(-25*count)+"%)")
+    //         },1000)
+    //     }else{
+    //         clearTimeout(timer)
+    //         timer = setTimeout(function(){
+    //             count--
+    //             if(count<0){count=0}
+    //             console.log(count)
+    //             train.css("transform","translateX("+(-25*count)+"%)")
+    //         },1000)
+    //     }
         // return false;
     })
     $(window).scroll(function(){
