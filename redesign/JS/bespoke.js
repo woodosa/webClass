@@ -81,4 +81,15 @@ $(document).ready(function(){
             train.css("transform","translateX("+(-25*count)+"%)")
         }
     })
+    $(window).scroll(function(){
+        let winst=$(window).scrollTop()
+        let mvTop=$(".testBase").offset().top
+        let winHeight=$(window).height()*0.95
+        let winScrollSet=winst+winHeight
+        if(winScrollSet>=mvTop && winScrollSet-mvTop<350){
+            $(".testBase").css("height",(winScrollSet-mvTop)+"px")
+            console.log("라인 길이",winScrollSet-mvTop)
+            // if(winScrollSet-mvTop>120){winScrollSet=120}
+        }
+    })
 })
