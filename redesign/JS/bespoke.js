@@ -38,29 +38,40 @@ $(document).ready(function(){
     
 
     let firstTargetTop = $(".make>.container").offset().top
-
+    
     $(window).scroll(function(){
+        let winHeight = $(window).height()*0.6 
+        let height=$(window).height()
         let endPoint=$(".spbene").offset().top
         let target = $(".make>.container")
         // let targetTop = target.offset().top
         let winst = $(window).scrollTop();
-        console.log(winst)
-        if(winst>=3301){
-            target.addClass("bsPadding")
-            }else{
-                target.removeClass("bsPadding")
-            }
-        if(winst>=firstTargetTop && winst<=3280){
-            // console.log(targetTop)
+        let scrollSet=(winst+height-firstTargetTop)
+        console.log("scrollset",scrollSet,winst>=firstTargetTop,"걸리는지점",winst,"태그높이",firstTargetTop)
+        if(winst+winHeight>=firstTargetTop && scrollSet<=4000){
+            target.removeClass("bsPadding")
            target.addClass("on")
+           if(scrollSet<0){scrollSet=0}
+           $(".make").css("padding-bottom",scrollSet-970)
+           if(target.hasClass("on")){
+                let posTop=(1240-(winst+winHeight-firstTargetTop))
+                console.log(posTop,"winst",winst,"taget",firstTargetTop)
+                if(posTop<=400){posTop=400}
+                target.css("top", posTop+"px")
+            }
             
-            // target.parent().css("padding-bottom",winst)
+            // $(".train").css("trasform","translateX()")
+            
+        }else if(scrollSet>=4000){
+            target.removeClass("on")
+            target.addClass("bsPadding")
         }else{
             target.removeClass("on")
-            count=0
+            target.addClass("bsPadding")
         }
         
     })
+    let timer;
     $(".make_content.container").on("wheel DOMMouseScroll",function(event){
         let train = $(".make .station>.train")
         let E = event.originalEvent
@@ -71,15 +82,23 @@ $(document).ready(function(){
          delta = E.wheelDelta
         }
         if(delta<0){
-            count++
-            if(count>3){count = 3}
-            train.css("transform","translateX("+(-25*count)+"%)")
-
+            clearTimeout(timer)
+            timer = setTimeout(function(){
+                count++
+                if(count>3){count = 3}
+                console.log(count)
+                train.css("transform","translateX("+(-25*count)+"%)")
+            },1000)
         }else{
-            count--
-            if(count<0){count=0}
-            train.css("transform","translateX("+(-25*count)+"%)")
+            clearTimeout(timer)
+            timer = setTimeout(function(){
+                count--
+                if(count<0){count=0}
+                console.log(count)
+                train.css("transform","translateX("+(-25*count)+"%)")
+            },1000)
         }
+        // return false;
     })
     $(window).scroll(function(){
         let winst=$(window).scrollTop()
@@ -88,7 +107,7 @@ $(document).ready(function(){
         let winScrollSet=winst+winHeight
         if(winScrollSet>=mvTop && winScrollSet-mvTop<350){
             $(".testBase").css("height",(winScrollSet-mvTop)+"px")
-            console.log("라인 길이",winScrollSet-mvTop)
+            // console.log("라인 길이",winScrollSet-mvTop)
             // if(winScrollSet-mvTop>120){winScrollSet=120}
         }
     })
