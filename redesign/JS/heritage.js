@@ -24,6 +24,15 @@ $(document).ready(function(){
         loop:true,
         effect: "flip",
         grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            clickable:true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
 
         // effect: "cube",
         // grabCursor: true,
