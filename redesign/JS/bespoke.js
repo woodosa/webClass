@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let count=0;
+    
     $(window).scroll(function(){
         let winst = $(window).scrollTop() // 스크롤바 위에서 얼만큼 내려왔는지 계산
         let winHeight = $(window).height()*0.65 
@@ -37,41 +37,57 @@ $(document).ready(function(){
     })
     
 
-    let firstTargetTop = $(".make>.container").offset().top
-    
-    $(window).scroll(function(){
-        let winHeight = $(window).height()*0.6 
-        let height=$(window).height()
-        let endPoint=$(".spbene").offset().top
-        let target = $(".make>.container")
-        // let targetTop = target.offset().top
-        let winst = $(window).scrollTop();
-        let scrollSet=(winst+height-firstTargetTop)
-        console.log("scrollset",scrollSet,winst>=firstTargetTop,"걸리는지점",winst,"태그높이",firstTargetTop)
-        if(winst+winHeight>=firstTargetTop && scrollSet<=4000){
-            target.removeClass("bsPadding")
-           target.addClass("on")
-           if(scrollSet<0){scrollSet=0}
-           $(".make").css("padding-bottom",scrollSet-970)
-           if(target.hasClass("on")){
-                let posTop=(1240-(winst+winHeight-firstTargetTop))
-                console.log(posTop,"winst",winst,"taget",firstTargetTop)
-                if(posTop<=400){posTop=400}
-                target.css("top", posTop+"px")
-            }
-            
-            // $(".train").css("trasform","translateX()")
-            
-        }else if(scrollSet>=4000){
-            target.removeClass("on")
-            target.addClass("bsPadding")
-        }else{
-            target.removeClass("on")
-            target.addClass("bsPadding")
-        }
-        
+    $(document).ready(function(){
+        fixedEffect(".fixedEffect",{
+        Length:7200})
     })
-    let timer;
+
+
+
+
+    // fixed 효과 초안
+
+
+    // let firstTargetTop = $(".make>.container").offset().top
+    
+    // $(window).scroll(function(){
+    //     let winHeight = $(window).height()*0.6 
+    //     let height=$(window).height()
+    //     let endPoint=$(".spbene").offset().top
+    //     let target = $(".make>.container")
+    //     // let targetTop = target.offset().top
+    //     let winst = $(window).scrollTop();
+    //     let scrollSet=(winst+height-firstTargetTop)
+    //     console.log("scrollset",scrollSet,winst>=firstTargetTop,"걸리는지점",winst,"태그높이",firstTargetTop)
+    //     if(winst+winHeight>=firstTargetTop && scrollSet<=4000){
+    //         target.removeClass("bsPadding")
+    //        target.addClass("on")
+    //        if(scrollSet<0){scrollSet=0}
+    //        $(".make").css("padding-bottom",scrollSet-970)
+    //        if(target.hasClass("on")){
+    //             let posTop=(1240-(winst+winHeight-firstTargetTop))
+    //             console.log(posTop,"winst",winst,"taget",firstTargetTop)
+    //             if(posTop<=400){posTop=400}
+    //             target.css("top", posTop+"px")
+    //         }
+            
+    //         // $(".train").css("trasform","translateX()")
+            
+    //     }else if(scrollSet>=4000){
+    //         target.removeClass("on")
+    //         target.addClass("bsPadding")
+    //     }else{
+    //         target.removeClass("on")
+    //         target.addClass("bsPadding")
+    //     }
+        
+    // })
+    // let timer;
+
+
+
+
+    //  스크롤 슬라이더 초안
     // $(".make_content.container").on("wheel DOMMouseScroll",function(event){
     //     let train = $(".make .station>.train")
     //     let E = event.originalEvent
@@ -99,7 +115,11 @@ $(document).ready(function(){
     //         },1000)
     //     }
         // return false;
-    })
+
+
+
+
+
     $(window).scroll(function(){
         let winst=$(window).scrollTop()
         let mvTop=$(".testBase").offset().top

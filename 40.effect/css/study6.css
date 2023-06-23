@@ -1,0 +1,179 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%;}
+ul,ol{
+    list-style: none;
+}
+
+html{
+    /* font-family: 'Agdasima', sans-serif; */
+    font-family: 'Lobster', cursive;
+    cursor: none;
+}
+p{
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(180deg,rgba(172, 172, 172, 0.517),rgb(255, 255, 255));
+}
+.intro::after{
+    content: "";
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    background: orange;
+}
+.txtBox{
+    font-size: 6rem;
+    /* text-transform: capitalize; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.txtBox h1{
+    line-height: 100%;
+    /* border: 1px solid red; */
+}
+.txtBox h1:nth-of-type(2){
+    font-size: 8.5rem;
+    text-align: right;
+    color: #444;
+    margin-right: 50px;
+}
+.txtBox h1 span{
+    font-style: italic;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+.txtBox p{
+    font-family: 'Lobster', cursive;
+    /* color: black; */
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+}
+.fixedEffect{
+    height: 8000px;
+}
+.station{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 2.5em;
+    /* text-align: center; */
+    text-transform: capitalize;
+    /* border: 1px solid black; */
+}
+.train{
+    width: 400%;
+    display: flex;
+    transition: all 1.2s ease 0s;
+    height: 700px;
+}
+.train>li{
+    flex: 1;
+    position: relative;
+}
+.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.train>li .txt{
+    position: absolute;
+    top: 50px;
+    width: 25%;
+    left: 150px;
+}
+.train>li .txt>h3{
+    /* color: orange; */
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.cursor{
+    /* border: 1px solid red; */
+    width: 18px;
+    height: 18px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-top:2px solid orange;
+    border-left:2px solid orange;
+    /* background: navy; */
+    transition: opacity 0.3s ease 0s;
+    /* transition: all 0.1 linear 0s; */
+    /* display: none;*/
+    opacity: 0;
+    pointer-events:none;
+    /* cursor: none; */
+    z-index: 15;
+}
+.cursor.on{
+    opacity: 1;
+}
+.cursorsub{
+    position: fixed;
+    left: 0;
+    top: 0;
+    border: 1px solid orange;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s linear 0s;
+    z-index: 2;
+}
+.cursorsub.on{
+    opacity: 1;
+}
+.cursubbox>.cursorsub:nth-of-type(1){transition: all 0.5s ease 0s;transform: scale(1);}
+.cursubbox>.cursorsub:nth-of-type(2){transition: all 0.6s ease 0s;transform: scale(0.8);}
+.cursubbox>.cursorsub:nth-of-type(3){transition: all 0.7s ease 0s;transform: scale(0.6);}
+.cursubbox>.cursorsub:nth-of-type(4){transition: all 0.8s ease 0s;transform: scale(0.4);}
+.cursubbox>.cursorsub:nth-of-type(5){transition: all 0.9s ease 0s;transform: scale(0.2);}
+@keyframes scrollAni {
+    0%{background: white;}
+    100%{background: orange;}
+}
+.cursubbox>.cursorsub.on.move:nth-of-type(1){transform: translateY(0px); animation: scrollAni infinite 0.5s ease 0s;}
+.cursubbox>.cursorsub.on.move:nth-of-type(2){transform: translateY(8px); animation: scrollAni infinite 0.5s ease 0.1s;}
+.cursubbox>.cursorsub.on.move:nth-of-type(3){transform: translateY(16px); animation: scrollAni infinite 0.5s ease 0.2s;}
+.cursubbox>.cursorsub.on.move:nth-of-type(4){transform: translateY(24px); animation: scrollAni infinite 0.5s ease 0.3s;}
+.cursubbox>.cursorsub.on.move:nth-of-type(5){transform: translateY(32px); animation: scrollAni infinite 0.5s ease 0.4s;}
+
+
+.curTxt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px ;
+    /* border: 1px solid black; */
+    z-index: 5;
+    display: none;
+}
+.curTxt.on{
+    display: block;
+}
+.cursorsub.on.move{
+    width: 5px;
+    height: 5px;
+    transition: none;
+}

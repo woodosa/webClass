@@ -21,7 +21,7 @@
 
         let floatingTxtLength = $(Tag+" b").length
         let aniDuration=option.aniSpeed?option.aniSpeed:0.5
-        let aniTerm=option.aniDelay?option.aniDelay:1
+        let aniTerm=option.aniDelay?option.aniDelay:0
         let aniTxtSize=option.aniTxtSize?option.aniTxtSize:50
         let aniName = option.effect?option.effect:"introAni"
         // aniDelay 글자간 애니메이션 간격
