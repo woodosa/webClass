@@ -1,0 +1,39 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+
+svg{
+    width: 500px;
+    border:1px solid red;
+}
+.aa{
+    display: flex;
+}
+.a{
+    transition: all 0.6s ease 0s;
+    fill: crimson;
+    /* fill-opacity: 0.5 ; */
+    stroke: black;
+    stroke-width: 1.6;
+    stroke-dasharray: 9;
+}
+.a:hover{
+    fill: lightblue;
+    /* fill-opacity: 0.5; */
+    stroke:indianred;
+    stroke-width: 3;
+    stroke-dasharray: 0.8;
+}
+.c1{
+    stroke-miterlimit:10;
+    fill: white;
+    stroke: blue;
+    stroke-width: 5;
+    transition: all 5s ease 0s;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+.c1:hover{
+    stroke: red;
+    stroke-width: 5;
+    stroke-dashoffset: 0;
+}

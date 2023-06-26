@@ -1317,27 +1317,15 @@ footer>section{
 
 
 .make{
-    padding-top: 100px;
     width: 100%;
-    height: 970px;
+    height: 8000px;
     background: #294433 ;
     color: rgb(192, 191, 191);
     position: relative;
-    
-}
-.make>img{
-    width: 1893px;
-    height: 3139px;
-    object-fit: contain;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 1.5%);
-}
-.make>section{
-    padding-top: 227px;
+    padding-bottom: 500px;
 }
 .make>section>h1{
+    padding-top: 100px;
     font-size: 120px;
     color: #D7C08E;
     text-align: center;
@@ -1363,7 +1351,7 @@ footer>section{
     transform: translateX(-100%);
 }
 .make>section>div>ul>li:nth-last-of-type(1)>div>h2{
-    font-size: 120px;
+    /* font-size: 120px; */
     white-space: nowrap;
 }
 .make>section>div>ul>li:nth-last-of-type(1)>div>*{
@@ -2565,63 +2553,7 @@ position: relative;
 .filter_icon>img{
     cursor: pointer;
 }
-.aniScrollBox{
-    padding-top:100vh;
-}
 
-.bespoke.on{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 10000;
-}
-/* .positionBox{
-    position: relative;
-    padding-bottom: 500vh;
-} */
-.make>.container.on{
-    position: fixed;
-    left: 50%;
-    /* top: 922px; */
-    transform: translate(-50%,-50%);
-    transition: opacity 0.5s ease 0s;
-}
-.make section.make_content.container .station{
-    opacity: 0;
-    width: 100%;
-    transition: all 0.5s ease 0s;
-
-    overflow: hidden;
-}
-.make section.make_content.container.on .station{
-    opacity: 1;
-}
-.make section.make_content.container .station .train{
-    width: 400%;
-    display: flex;
-    transition: all 2s ease 0s;
-}
-.make section.make_content.container .station .train .slider{
-    width: 100%;
-    position: relative;
-}
-.make_content.container{
-    padding:20px 300px;
-    margin-top: 100px;
-    border: 3px #D7C08E;
-    border-style: double;
-}
-.make_content.container .tarain.on{
-    opacity: 1;
-}
-.bsPadding{
-    /* transition: all 0.5s ease 0s; */
-    padding-top: 3000px !important;
-    opacity: 1;
-}
 .mttb{
     opacity: 0.1;
     transform: translateY(50px);
@@ -2648,4 +2580,28 @@ position: relative;
     top: calc(50% - -98px); */
     left: 50%;
     top: 0%;
+}
+.make_content>div
+{  
+    border: 3px #D7C08E;
+    border-style: double;
+}
+.make.fixedEffect .station{
+    height: 600px;
+    margin-top: 50px;
+}
+.make.fixedEffect .train{
+    height: 600px;
+}
+.make.fixedEffect .slider{
+    width: 1200px;
+    margin-top: 100px;
+}
+/* .make.fixedEffect .slider img{
+    width:650px;
+    height:406px;
+    object-fit: cover;
+} */
+.make_content.container.movingStation{
+    left:0%;
 }

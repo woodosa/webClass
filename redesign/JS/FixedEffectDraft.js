@@ -17,7 +17,7 @@ function fixedEffect(Tag,EffectOption){
         
         if(scrollDistance<0){
             movingStaiton.css("position", "relative")
-            movingStaiton.css("top","0")
+            movingStaiton.css("top","0").css("left","0%").css("transform","translateX(0%)")
         }
         
         if(scrollDistance>=0 && scrollDistance<=actionDistanceLength){
@@ -30,7 +30,7 @@ function fixedEffect(Tag,EffectOption){
             //Fixed 동작실행
 
             movingStaiton.css("position", "fixed")
-            movingStaiton.css("top","0")
+            movingStaiton.css("top","0").css("left","50%").css("transform","translateX(-50%)")
             //스크롤에 따른 슬라이드효과 예시
             moveSlider(count)
             // opacity(count,percent)
@@ -41,7 +41,7 @@ function fixedEffect(Tag,EffectOption){
         if(scrollDistance>actionDistanceLength){
             //동작 종료
             movingStaiton.css("position", "relative")
-            movingStaiton.css("top",actionDistanceLength+"px")
+            movingStaiton.css("top",actionDistanceLength+"px").css("left","0%").css("transform","translateX(0%)")
         }
     })
 

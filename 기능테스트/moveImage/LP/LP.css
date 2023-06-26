@@ -1,0 +1,76 @@
+*{margin: 0;padding: 0;}
+
+html{
+    background: crimson;
+}
+
+
+
+.aaaa{
+    height: 1080px;
+    display: flex;
+    /* background: blue; */
+}
+.aaa{
+    width: 1250px;
+    height: 970px;
+    background: url(./0d60c02c777429ab260dd54fca91fcf7.jpg) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.aa{
+    /* border: 1px solid red; */
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    left: 30px;
+    top: 28px;
+    /* border: 1px solid red; */
+}
+.a{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: rotate1 500s ease 0s infinite forwards;
+}
+
+.bbb{
+    width: 1250px;
+    height: 970px;
+    position: relative;
+    /* border: 1px solid blue; */
+    right: 0%;
+    top: -150px;
+}
+.a2{
+    position: absolute;
+    /* border: 10px solid green; */
+    width: 700px;
+    height: 700px;
+    top: -60px;
+    right: -300px;
+    transform: rotate(-25deg);
+    animation: rotate2 1.5s ease 0s infinite forwards;
+}
+@keyframes rotate1 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(36000deg);}
+}
+@keyframes rotate2 {
+    0%{transform: rotate(-15deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(-15deg);}
+}
+.txtBox{
+    margin: 0 auto;
+    font-size: 8rem;
+    z-index: 50;
+    font-family: "caprasimo";
+    margin-right: 250px;
+    color: #397eee;
+
+}
+@font-face{
+    font-family: "caprasimo";
+    src: url(./Caprasimo/Caprasimo-Regular.ttf);
+}

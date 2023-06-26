@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;}
+
+body{
+    background: #666;
+    overflow: hidden;
+}
+
+.aa{
+    position: relative;
+    width: 500px;
+    height: 180px;
+    /* border: 1px solid red; */
+    /* background: red; */
+    margin: 0 auto;
+    margin-top: 50px;
+    animation: carMove 4s linear 0s infinite;
+}
+
+.wheelL{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 77px;
+    left: 86px;
+    animation: wheelMove 1s linear 0s infinite forwards;
+}
+.wheelR {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 76px;
+    right: 73px;
+    animation: wheelMove 1s linear 0s infinite forwards;
+}
+.frame{
+    position: absolute;
+
+}
+@keyframes wheelMove{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes carMove{
+    0%{transform: translateX(-200%);}
+    100%{transform: translateX(250%);}
+}
+h1{
+    text-align: center;
+    letter-spacing: 100px;
+}
+h2{
+    text-align: center;
+    letter-spacing: 20px;
+}
+.txt>h2:nth-of-type(1){color:  #000;}
+.txt>h2:nth-of-type(2){color:  #111;}
+.txt>h2:nth-of-type(3){color:  #222;}
+.txt>h2:nth-of-type(4){color:  #333;}
+.txt>h2:nth-of-type(5){color:  #444;}
+.txt>h2:nth-of-type(6){color:  #555;}
+.txt>h2:nth-of-type(7){color:  #777;}
+.txt>h2:nth-of-type(8){color:  #888;}
+.txt>h2:nth-of-type(9){color: #999;}

@@ -21,7 +21,10 @@ $(document).ready(function(){
         }
     })
 
-    
+    // fixedEffect(".fixedEffect",{
+    //     Length:7200
+    // })
+
     $(window).scroll(function(){
         ScrollMovTxt(".mvTitle",{
             // origin:1,
@@ -39,10 +42,14 @@ $(document).ready(function(){
 
     $(document).ready(function(){
         fixedEffect(".fixedEffect",{
-        Length:7200})
+        Length:7400})
     })
 
-
+    // if($(".fixedEffect").css("position","relative")){
+    //     $(".make_content.movingStation").css("left",0)
+    // }else{
+    //     $(".make_content.movingStation").css("left","50%").css("transform","translateX(-50%)")
+    // }
 
 
     // fixed 효과 초안
