@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    count=0
+    $(".Next").click(function(){
+        count++
+        if(count>3){count=0}
+        $(".train").css("transform","translateX(-"+((100/7)*(count*2))+"%)")
+    })
+    $(".Prev").click(function(){
+        count--
+        if(count<0){count=0}
+        $(".train").css("transform","translateX(-"+((100/7)*(count*2))+"%)")
+    })
+})
