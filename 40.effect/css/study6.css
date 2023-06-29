@@ -177,3 +177,7 @@ p{
     height: 5px;
     transition: none;
 }
+.contents{
+    width: 1200px;
+    margin: 0 auto;
+}

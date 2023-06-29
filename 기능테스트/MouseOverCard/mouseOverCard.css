@@ -3,11 +3,30 @@ ul{
     list-style: none;
 }
 
-
-.Card{
-    background: crimson;
-    width: 100vw;
+.area{
+    position: relative;
     height: 100vh;
+}
+
+.area>h2{
+    color: #ffe732;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 50px; */
+    font-size: 5rem;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+
+}
+.Card{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
 }
 .wrap{
     width: 100%;
@@ -15,25 +34,33 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    perspective: 1000px;
 }
 .wrap>li{
-    transition: all 0.5s ease 0s;
+    transition: all 1s ease 0s;
     border-radius: 15%;
-    border: 1px solid black;
-    width: calc((100% - 50px)/5);
-    height: calc((100% - 50px)/4);
+    /* border: 1px solid black; */
+    width: calc((100%)/8);
+    height: calc((100%)/4);
     overflow: hidden;
+    background: #285cb1;
 }
 .wrap>li>img{
     width: 100%;
     height: 100%;
+    /* transition: all 0.5s ease 0s; */
     object-fit: cover;
+    display: none;
     /* filter: grayscale(0.6); */
 }
-.wrap>li:hover{
-    transform: rotateX(180deg);
-    background: skyblue;
-}
 .wrap>li:hover>img{
+    /* transform: rotateX(180deg); */
+    /* background: skyblue; */
+    
+}
+/* .wrap>li:hover>img{
     opacity: 0;
+} */
+.content{
+    /* margin-top: 100vh; */
 }
