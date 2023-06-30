@@ -61,3 +61,36 @@
     opacity: 0.3;
     transition: all 0.5s ease 0s;
 }
+.station{
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+}
+.train{
+    list-style: none;
+    width: 800%;
+    height: 100%;
+    transition: all 0.5 ease 0s;
+    display: flex;
+}
+.train>li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    border: 1px solid black;
+    font-weight: bold;
+    color: white;
+}
+.train>li.on{
+    color: crimson;
+}
+.train>li b{
+    border: 1px solid lime;
+    display: inline-block;
+    transform: rotateY(180deg);
+    perspective: 1000px;
+    transition: all 1s ease 0s;
+}
+
