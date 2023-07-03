@@ -6,6 +6,7 @@ body{
     background: orange;
 }
 .aaa{
+    /* border: 1px solid red; */
     /* overflow: hidden; */
     position: relative;
     margin: 0 auto;
@@ -16,9 +17,11 @@ body{
 }
 .aabg{
     position: absolute;
-    width: 1600px;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: contain;
+    top: 45px;
+    left: 80px;
 }
 .station{
     overflow: hidden;
